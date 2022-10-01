@@ -2,7 +2,7 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Tourney&center=true&color=2CFF00&size=40&width=750&height=80&lines=Prasanna%20Brabourame"/>
 </p>
 
-<h1 align="center">Hi 👋, I'm Prasanna Brabourame</h1>
+<h1 align="center">Hi 👋, I'm Prasanna Brabourame </h1>
 <h3 align="center">A creative and adaptable person who loves technology. Motivated full stack web developer with 7 Years of exp in IT industry. Loves working with both client-side and server-side technologies</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=prasannabrabourame" alt="prasannabrabourame" /></a> </p>
