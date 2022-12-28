@@ -15,6 +15,8 @@
 
 - 📝 I regularly write articles on [https://medium.com/@prasannabrabourame](https://medium.com/@prasannabrabourame)
 
+- Badges [https://www.credly.com/users/prasanna-brabourame](https://www.credly.com/users/prasanna-brabourame) 
+
 - 📫 How to reach me **prasanna18101994@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
