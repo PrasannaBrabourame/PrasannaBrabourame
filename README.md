@@ -20,11 +20,12 @@
 - 📫 How to reach me **prasanna18101994@gmail.com**
 
 ### Check out my latest articles
-<a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/0" alt="Recent Article 0"> 
- <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1" alt="Recent Article 1">
+### Check out my latest articles
+<a target="_blank" href="https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-75f730c49c01"><img src="https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-75f730c49c01" alt="Recent Article 0"> 
+ <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1"><img src="https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-75f730c49c01" alt="Recent Article 1">
  <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/2"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/2" alt="Recent Article 2">
  <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/3"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/3" alt="Recent Article 3">
-  <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/3"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/4" alt="Recent Article 4">
+  <a target="_blank" href="https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-75f730c49c01"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/9ffaf3ad1606" alt="Recent Article 4">
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
