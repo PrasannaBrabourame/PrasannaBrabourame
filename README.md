@@ -5,9 +5,11 @@
 <h1 align="center">Hi 👋, I'm Prasanna Brabourame</h1>
 <h3 align="center">A creative and adaptable person who loves technology. Motivated full stack web developer with 7 Years of exp in IT industry. Loves working with both client-side and server-side technologies</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=prasannabrabourame" alt="prasannabrabourame" /></a> </p>
+<div align="left">
 
-<p align="left"> <a href="https://twitter.com/prasannabrabour" target="blank"><img src="https://img.shields.io/twitter/follow/prasannabrabour?logo=twitter&style=for-the-badge" alt="prasannabrabour" /></a> </p>
+[![user:6703980's SO profile](https://stackoverflow-readme-profile.johannchopin.fr/profile/6703980?theme=monokai&website=true&location=true)](https://github.com/johannchopin/stackoverflow-readme-profile)
+
+</div>
 
 - 🌱 I’m currently learning **DevOps and Blockchain Smart Contarct**
 
