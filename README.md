@@ -1,309 +1,299 @@
-<p  align="center">
+<!-- ============ HEADER ============ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16324F,55:2AA5A0,100:E8A33D&height=210&section=header&text=Prasanna%20Brabourame&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Forward%20Deployed%20AI%20Specialist%20%C2%B7%20Tech%20Lead%20%E2%80%94%20AI%20Solutions&descAlignY=57&descSize=20"/>
 
-  
-
-<img  src="https://readme-typing-svg.herokuapp.com/?font=Tourney&center=true&color=2CFF00&size=40&width=750&height=80&lines=Prasanna%20Brabourame"/>
-
-  
-
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&center=true&vCenter=true&width=750&height=60&color=2AA5A0&lines=I+ship+AI+from+demo+to+production.;Forward+Deployed+%40+NCS+AI+Central;GovTech+%C2%B7+RegTech+%C2%B7+Agentic+AI;4+AI+platforms+live+in+regulated+domains;10%2B+years+%E2%80%94+architect%2C+build%2C+harden%2C+hand+over"/>
 </p>
 
-  
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-CURRENTLY_DEPLOYED-E8A33D?style=for-the-badge&labelColor=16324F"/>
+  <img src="https://img.shields.io/badge/BASE-SINGAPORE_🇸🇬-2AA5A0?style=for-the-badge&labelColor=16324F"/>
+  <img src="https://komarev.com/ghpvc/?username=PrasannaBrabourame&style=for-the-badge&color=2AA5A0&label=VISITORS"/>
+</p>
 
-👋 Hi there! I'm a creative and adaptable tech enthusiast on a mission to shape the future through technology. With 8+ years of experience in the IT industry, I've had the privilege of witnessing the rapid evolution of the digital landscape.
+<br/>
 
- 
-As a **Full Stack Web Developer**, I thrive in the world of bits and bytes, equally comfortable crafting elegant user interfaces on the client side as I am architecting robust server-side solutions. My passion for technology is rivaled only by my dedication to staying at the forefront of innovation.
+## `$ whoami`
 
-  
+```yaml
+name: Prasanna Brabourame
+role: Forward Deployed AI Specialist @ NCS AI Central
+mission: "The gap between an AI demo and a production system is where I work."
+years_in_tech: 10+
+currently:
+  - Embedded in Singapore Government GenAI & agentic AI programmes (Gov+ · Whole-of-Government)
+  - Partnering with GovTech, Google and the National AI Group
+  - Building with Claude, Gemini, Vertex AI Agent Engine & Model Context Protocol (MCP)
+how_i_work:
+  embed: "inside the client's walls — their use cases, constraints and data rules"
+  build: "the whole system myself — front end, AI pipeline, security, infra"
+  harden: "for the day after go-live — retries, watchdogs, audits, backstops"
+speaks: [English, Tamil, TypeScript, Python, Go]
+fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw it"
+```
 
-Here's a glimpse into what defines me:
+<br/>
 
-  
+## 🛰️ Flagship AI Deployments
 
-🤖 **AI Engineer:** I'm fascinated by the possibilities of Artificial Intelligence, and I'm always exploring ways to leverage AI to solve complex problems.
+> Production systems in domains where mistakes are expensive. Code is client-owned & private — war stories available over ☕.
 
-  
-
-🏢 **Solution Architect:** I have a knack for designing scalable and efficient solutions that bridge the gap between business needs and technology.
-
-  
-
-🛠 **DevOps Specialist:** I'm a strong advocate for DevOps practices, streamlining the software development lifecycle and enabling continuous delivery.
-
-  
-
-🌐 **Open Source Advocate:** I believe in the power of open source software and actively contribute to and support the community.
-
-  
-
-📚 **Continuous Learner:** In the ever-evolving tech world, learning is a way of life. I'm constantly adding new skills to my toolkit.
-
-  
-
-📝 **Tech Blogger:** I enjoy sharing my knowledge and experiences through tech blogging, helping others on their learning journeys.
-
-  
-
-🎙 **Public Speaker:** I love engaging with the tech community through speaking engagements, sharing insights, and inspiring others.
-
-  
-
-Feel free to reach out if you want to collaborate, discuss tech trends, or just have a good old-fashioned geek-out session! Let's create the future, one line of code at a time. ✨</h2>
-
-  
-
-- 📝 I regularly write articles on [https://medium.com/@prasannabrabourame](https://medium.com/@prasannabrabourame)
-
-- Badges [https://www.credly.com/users/prasanna-brabourame](https://www.credly.com/users/prasanna-brabourame)
-
-- 📫 How to reach me **prasanna18101994@gmail.com**
-
-  
-
-### Check out my latest articles
-
-  <p>
-  <table>
+<table>
   <tr>
-<a  target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1"><img  src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1" style="width: 600px;" alt="Recent Article 1">
+    <td width="50%" valign="top">
+      <h3>🕌 MUIS HIVA</h3>
+      <p>
+        <img src="https://img.shields.io/badge/GOVTECH_·_CERTIFICATION-16324F?style=flat-square"/>
+        <img src="https://img.shields.io/badge/●_DEPLOYED-2AA5A0?style=flat-square"/>
+      </p>
+      <p>AI document review for Singapore's halal certification authority — classifies <b>25 document types</b>, validates them against the full certification rule set, and never lets the LLM make a safety-critical call alone.</p>
+      <p><code>React</code> <code>Firebase</code> <code>AISay</code> <code>Gemini</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏛️ CSP ComplAI</h3>
+      <p>
+        <img src="https://img.shields.io/badge/REGTECH_·_AML%2FCFT-16324F?style=flat-square"/>
+        <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
+      </p>
+      <p>Automates compliance review of Corporate Service Providers against <b>~40 ACRA rules</b> — severity is always stamped from the rule book, never inferred by the model. Findings a regulator can defend.</p>
+      <p><code>React</code> <code>Python</code> <code>Firestore</code> <code>Gemini</code></p>
+    </td>
   </tr>
   <tr>
-<a  target="_blank"  href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/0"><img  src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/0" style="width: 600px;" alt="Recent Article 0">
+    <td width="50%" valign="top">
+      <h3>🛡️ SecWiz</h3>
+      <p>
+        <img src="https://img.shields.io/badge/DEVSECOPS-16324F?style=flat-square"/>
+        <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
+      </p>
+      <p>From vulnerability to tested merge request, automatically — a <b>12-stage remediation pipeline</b> with <b>4 interchangeable LLM providers</b>. Fixes ship only when the tests pass.</p>
+      <p><code>Node.js</code> <code>PostgreSQL</code> <code>Claude</code> <code>GPT</code> <code>Gemini</code> <code>Ollama</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎓 NCS LighTool</h3>
+      <p>
+        <img src="https://img.shields.io/badge/EDTECH-16324F?style=flat-square"/>
+        <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
+      </p>
+      <p>Turns teacher tracking data into per-child learning insights — a Pub/Sub-driven agent pipeline (<b>retrieval → summarise → evaluate</b>) with end-to-end correlation tracing.</p>
+      <p><code>Go</code> <code>Next.js</code> <code>Vertex AI Agent Engine</code></p>
+    </td>
   </tr>
-  <tr>
-<a  target="_blank"  href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/4"><img  src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/4" style="width: 750px;" alt="Recent Article 4">
-  </tr>
-  <tr>
-<a  target="_blank"  href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/5"><img  src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/5" style="width: 770px;" alt="Recent Article 5">
-  </tr>
-  </table>
-  </p>
+</table>
 
-  
+<br/>
 
-<h3  align="left">Connect with me:</h3>
+## 🗄️ Complete Mission Archive
 
-- Consulting: [https://calendly.com/prasannabrabourame/15min](https://calendly.com/prasannabrabourame/15min)
+> Every deployment, 2016 → now. Expand an era to read the case files.
 
-  
-<p  align="left">
-<a  href="https://codepen.io/prasannabrabourame"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"  alt="prasannabrabourame"  height="30"  width="40"  /></a>
-<a  href="https://dev.to/prasannabrabourame"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg"  alt="prasannabrabourame"  height="30"  width="40"  /></a>
-<a  href="https://twitter.com/prasannabrabour"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"  alt="prasannabrabour"  height="30"  width="40"  /></a>
-<a  href="https://linkedin.com/in/prasannabrabourame"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"  alt="prasannabrabourame"  height="30"  width="40"  /></a>
-<a  href="https://stackoverflow.com/users/6703980"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"  alt="6703980"  height="30"  width="40"  /></a>
-<a  href="https://kaggle.com/prasannabrabourame"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg"  alt="prasannabrabourame"  height="30"  width="40"  /></a>
-<a  href="https://fb.com/prasannabrabourame"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"  alt="prasannabrabourame"  height="30"  width="40"  /></a>
-<a  href="https://instagram.com/er.pras"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"  alt="er.pras"  height="30"  width="40"  /></a>
-<a  href="https://medium.com/@prasannabrabourame"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg"  alt="@prasannabrabourame"  height="30"  width="40"  /></a>
-<a  href="https://www.hackerrank.com/prasanna_b"  target="blank"><img  align="center"  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"  alt="prasanna_b"  height="30"  width="40"  /></a>
-  <a href="https://www.upwork.com/freelancers/~0127b08168f0a845c2" target="blank"><img align="center"
-      src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg"
-      alt="Prasanna Brabourame" height="30" width="auto" /></a>
-</p>
+<details>
+<summary><b>🏢 NCS Group — Singapore Government platforms · 2023 → now</b></summary>
+<br/>
 
-  
+**ShiftRing AI** — AI-driven voice + chat customer support: natural-language understanding, multilingual responses, automated ticket creation.
+`AI` `NLU` `Voice` `Chat Automation`
 
-  
+**FWMOMCare** — National migrant-worker health-monitoring app. Led the re-platform from a .NET monolith to Node.js/NestJS microservices, migrating MSSQL → PostgreSQL along the way.
+`Node.js` `NestJS` `PostgreSQL` `Microservices`
 
-<h3  align="left">Languages and Tools:</h3>
+**Exit Pass** — Manages exit permissions and location quotas for migrant-worker dormitory residents; integrated with SafeEntry and SGWorkPass.
+`GovTech` `National Integrations`
 
- **Backend:**
- <p  align="left">
-  <a href="https://go.dev/" target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" height="50" width="auto"/></a><a href="https://nodejs.org/en" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="50" width="auto"/></a>
-  <a href="https://www.python.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50" width="auto"/></a>
-    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="50" width="auto"/></a>
-    <a href="https://www.php.net/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="50" width="auto"/></a>
-    <a href="https://www.typescriptlang.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="50" width="auto"/></a>
-     <a href="https://dart.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original-wordmark.svg" height="50" width="auto"/></a>
-<a href="https://nestjs.com/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" height="50" width="auto"/></a>
-  <a href="https://expressjs.com/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://expressjs.com/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" height="50" width="auto"/></a>
-  </p>
+**MW Data Hub** — Data platform tracking Access Code status for migrant workers, supporting COVID-19 containment policy.
+`Data Platform` `GovTech`
 
- **Frontend:**
- <p  align="left">
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="50" width="auto"/></a>
-</p>
- 
-   **Database:**
- <p  align="left">
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" height="60" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" height="60" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60" width="auto"/></a>
-      <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" height="60" width="auto"/></a>
-   <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="60" width="auto"/></a>
-   <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original-wordmark.svg" height="60" width="auto"/></a>
+**Safe at Work** — Portal for employers to verify the Access Code status of Work Permit, S Pass, and Employment Pass holders.
+`GovTech` `Employer Services`
 
-</p>
+</details>
 
-  **Cloud:**
- <p  align="left">
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="60" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" height="60" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original-wordmark.svg" height="60" width="auto"/></a>
-</p>
+<details>
+<summary><b>🚀 2359 Media — Team Lead (R&D) & Principal Engineer · 2022 → 2023</b></summary>
+<br/>
 
-  **Others:**
- <p  align="left">
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" height="50" width="auto"/></a>
-      <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original-wordmark.svg" height="50" width="auto"/></a>
-   <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuget/nuget-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg" height="50" width="auto"/></a>
-<a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-plain-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="50" width="auto"/></a>
-<a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/denojs/denojs-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-plain.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/backbonejs/backbonejs-original-wordmark.svg" height="50" width="auto"/></a>
-<a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original-wordmark.svg" height="50" width="auto"/></a>
-    <a href="https://react.dev/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original-wordmark.svg" height="50" width="auto"/></a>
-      <a href="https://vuejs.org/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="50" width="auto"/></a>
-  <a href="https://angular.io/" target="blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" height="50" width="auto"/></a>
-</p>
-          
- 
- 
-<p  align="left">   </p>
+**NUS IASS** *(National University of Singapore)* — Platform connecting students to paid gig work that counts toward internship credit, giving businesses wider talent access. Shipped across web, iOS, and Android.
+`Node.js` `React` `Strapi` `PostgreSQL` `Payment Gateway`
 
-<h3  align="left">Support:</h3>
+**PCF Operational Relief-Staff App** *(PAP Community Foundation)* — End-to-end relief-staff assignments, from job creation through payroll, spanning a CMS application and mobile app.
+`Node.js` `React` `AWS` `PostgreSQL`
 
-<p><a  href="https://www.buymeacoffee.com/prasana">  <img  align="center"  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"  height="50"  width="210"  alt="prasana"  /></a><a  href="https://ko-fi.com/prasannabrabourame">  <img  align="center"  src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"  height="50"  width="210"  alt="prasannabrabourame"  /></a></p>
+</details>
 
-## 📈 Github Stats 
+<details>
+<summary><b>🧪 Logical Steps — Senior Product Engineer · 2019 → 2022</b></summary>
+<br/>
+
+**Ola Search Platform Suite** *(technical lead, 12-person team)* — Conversational AI search: an NLP search engine on Apache Solr, a context-aware query engine, an intent engine matching queries to answers, the OlaBot chatbot (voice + text, rich-media responses, guided transactions), OlaNLP grammar/style correction, and an admin console for relevancy tuning.
+`Python` `Node.js` `React` `Solr` `Elasticsearch` `Docker` `Kubernetes` `TensorFlow`
+
+**LNDDO** — Fintech platform assessing SME creditworthiness from digital-footprint data to offer short-term business credit lines (UAE market). Architecture & framework design team.
+`Node.js` `React` `MongoDB` `Azure` `Redis`
+
+**CardsPe (Zupcash)** — Offline-to-online commerce: merchants launch online stores shareable through chat apps. Built from scratch — APIs, auth/storage microservices, orchestration middleware, data modelling.
+`Node.js` `Next.js` `MongoDB` `AWS` `Redis` `Elasticsearch`
+
+**VISSION** — Web-scraping platform: message queues between microservices, LDAP sign-in module, Express API proxy.
+`Python` `Flask` `Scrapy` `Puppeteer` `AWS Lambda`
+
+**LS MQTT** — Publisher-subscriber messaging on HiveMQ MQTT with a dynamic channel-management UI and an embedded-microcontroller proof of concept.
+`Node.js` `Next.js` `MQTT` `HiveMQ` `IoT`
+
+**Power App** — Blockchain dashboard integrating Ethereum smart contracts via Web3: live transaction history, chain state, and exchange data feeds.
+`Solidity` `Ethereum` `Web3` `NFT` `Truffle`
+
+</details>
+
+<details>
+<summary><b>📚 Integra Software Services — Senior Programmer, Innovation & R&D · 2016 → 2019</b></summary>
+<br/>
+
+**iNLP** *(18-person team)* — NLP engine for publishing: cognitive rule engine, custom spaCy NER models, FastText language detection routing to Hugging Face neural machine translation, MinHash/LSH de-duplication at scale, LSTM/CNN deep learning, and transfer learning with BERT, GPT-2, and T5; Rasa-based chatbot.
+`Python` `spaCy` `NLTK` `TensorFlow` `Hugging Face` `Rasa`
+
+**iAuthor / iCorrectProof** — Online author-proofing editor for Adobe InDesign content, designed from scratch as Scrum Master/SPOC: real-time grammar checking over sockets, an Electron desktop app plus PWA, automated multi-format document delivery, and blockchain-based peer review with Stripe/PayPal.
+`React` `Redux` `Electron` `Express` `Azure` `WebSockets`
+
+**Project X (R&D)** — InDesign-replacement rendering engine: in-browser PDF-as-HTML rendering via HTML Canvas. The work led to a **patent application**.
+`Node.js` `Canvas` `PDF.js` `Font Rendering`
+
+**WK Digital Book Platform** — Digital book platform with in-browser PDF rendering, a cron-based file-import engine, and localisation.
+`ASP.NET Web API` `MS SQL` `Angular`
+
+**iRights & Pearson platforms** — iRights: rights/permissions management for photo research (budgets, licensing scope, legal risk). Pearson Image Atlas (WCAG 2.0 AA accessible) and Video Collection (MyLab SSO).
+`.NET` `Angular` `Accessibility`
+
+</details>
+
+<details>
+<summary><b>🌍 Open Source & Side Quests</b></summary>
+<br/>
+
+**COVID-19 Dashboards** — Built the Tamil Nadu COVID-19 dashboard and a real-time SAARC impact visualisation; contributed district-level GeoJSON to the Covid India project.
+`React` `D3` `GeoJSON`
+
+**npm Packages** — 13 published open-source packages on [npm](https://www.npmjs.com/~prasannabrabourame).
+`Node.js` `Open Source`
+
+</details>
+
+<br/>
+
+## 🗺️ Decade in Deployment
+
+```mermaid
+timeline
+    title 2016 → Now
+    2016-19 : Senior Programmer, R&D — Integra : Custom NER · NMT routing · patent filed
+    2019-22 : Senior Product Engineer — Logical Steps : Conversational AI search · fintech
+    2022-23 : Eng. Team Lead (R&D) — 2359 Media : NUS & PCF platforms
+    2023-24 : Tech Lead — NCS : FWMOMCare .NET → Node microservices
+    2024-26 : Senior Consultant — NCS Gov+ : Cloud architecture · ShiftRing AI
+    2026 : Forward Deployed AI Specialist — NCS AI Central : 4 AI platforms shipped
+```
+
+<br/>
+
+## 🧰 Technical Arsenal
+
+**🤖 AI / LLM**
+
 <p>
-  <table>
-    <tr> <td><img src="https://github-readme-stats.vercel.app/api?username=prasannabrabourame&count_private=true&hide_border=true&show_icons=true&hide_title=true&theme=dark" alt="Prasanna's Stats"/>
-    </td>
-     <td>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasannabrabourame&layout=compact&hide=php&hide_border=true&theme=dark" alt="Prasanna's Top Langs"/>
- </td>
-    </tr>
-    <tr><td><img  align="center"  src="https://github-readme-streak-stats.herokuapp.com/?user=prasannabrabourame&layout=compact&hide=php&hide_border=true&theme=dark"  alt="prasannabrabourame"  />
-    </td>
-    <td>
-      
-![user:6703980's SO profile](https://stackoverflow-readme-profile.johannchopin.fr/profile/6703980?theme=monokai&website=true&location=true)
+  <img src="https://img.shields.io/badge/Anthropic_Claude-16324F?style=for-the-badge&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google_Gemini-16324F?style=for-the-badge&logo=googlegemini&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI-16324F?style=for-the-badge&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ollama-16324F?style=for-the-badge&logo=ollama&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vertex_AI_Agent_Engine-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/RAG-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Hugging_Face-2AA5A0?style=for-the-badge&logo=huggingface&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Claude_Code-E8A33D?style=for-the-badge&logo=anthropic&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Agentic_Pipelines-E8A33D?style=for-the-badge&logoColor=16324F"/>
+</p>
 
-   </td>
-   </tr>
-   </table>
-   </p>
+**⚙️ Languages & Backend**
 
-#### Thanks for visiting :heart:
+<p>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,go,nodejs,express,nestjs,fastapi,flask,graphql,cs,php&perline=12"/></a>
+</p>
 
-![VisitorCount](https://profile-counter.glitch.me/PrasannaBrabourame/count.svg)
+**🎨 Frontend**
+
+<p>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,vite,angular,vue,electron,figma&perline=12"/></a>
+</p>
+
+**☁️ Cloud, Data & DevOps**
+
+<p>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=gcp,aws,azure,firebase,docker,kubernetes,terraform,postgres,mongodb,redis,elasticsearch,kafka,rabbitmq,nginx,jenkins,ansible,git,linux,bash,jest&perline=12"/></a>
+</p>
+
+<br/>
+
+## 📊 Telemetry
+
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats.vercel.app/api?username=prasannabrabourame&count_private=true&hide_border=true&show_icons=true&hide_title=true&theme=react&bg_color=0D1117&title_color=2AA5A0&icon_color=E8A33D" alt="GitHub Stats"/></td>
+    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasannabrabourame&layout=compact&hide=php&hide_border=true&theme=react&bg_color=0D1117&title_color=2AA5A0" alt="Top Languages"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Streak"/></td>
+    <td><img src="https://github-profile-trophy.vercel.app/?username=prasannabrabourame&theme=discord&no-frame=true&no-bg=true&column=3&margin-w=8" alt="Trophies"/></td>
+  </tr>
+</table>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=prasannabrabourame&bg_color=0D1117&color=2AA5A0&line=E8A33D&point=ffffff&hide_border=true&area=true" alt="Activity Graph"/>
+
+<br/>
+
+## ✍️ Latest Field Notes
+
+📝 I write about AI engineering, Docker, and production war stories on [Medium](https://medium.com/@prasannabrabourame) · 🏅 Verified badges on [Credly](https://www.credly.com/users/prasanna-brabourame)
+
+<table>
+  <tr>
+    <td><a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/0" style="width: 600px;" alt="Recent Article 0"></a></td>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/1" style="width: 600px;" alt="Recent Article 1"></a></td>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/2"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@prasannabrabourame/2" style="width: 600px;" alt="Recent Article 2"></a></td>
+  </tr>
+</table>
+
+<br/>
+
+## 🤝 Open Channels
+
+<p>
+  <a href="https://linkedin.com/in/prasannabrabourame"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://medium.com/@prasannabrabourame"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white"/></a>
+  <a href="https://stackoverflow.com/users/6703980"><img src="https://img.shields.io/badge/Stack_Overflow-F58025?style=for-the-badge&logo=stackoverflow&logoColor=white"/></a>
+  <a href="https://dev.to/prasannabrabourame"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"/></a>
+  <a href="https://twitter.com/prasannabrabour"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+  <a href="https://kaggle.com/prasannabrabourame"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/></a>
+  <a href="https://www.hackerrank.com/prasanna_b"><img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=16324F"/></a>
+  <a href="https://codepen.io/prasannabrabourame"><img src="https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white"/></a>
+  <a href="https://www.upwork.com/freelancers/~0127b08168f0a845c2"><img src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=16324F"/></a>
+</p>
+
+<p>
+  <a href="https://calendly.com/prasannabrabourame/15min"><img src="https://img.shields.io/badge/📅_Book_a_15--min_consult-2AA5A0?style=for-the-badge&logoColor=white"/></a>
+  <a href="mailto:prasanna18101994@gmail.com"><img src="https://img.shields.io/badge/📫_prasanna18101994@gmail.com-16324F?style=for-the-badge"/></a>
+</p>
+
+## ☕ Fuel the Mission
+
+<p>
+  <a href="https://www.buymeacoffee.com/prasana"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45" alt="Buy Me A Coffee"/></a>
+  <a href="https://ko-fi.com/prasannabrabourame"><img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="45" alt="Ko-fi"/></a>
+</p>
+
+<!-- Optional: contribution snake — enable the Platane/snk GitHub Action in this repo, then uncomment:
+<img src="https://raw.githubusercontent.com/PrasannaBrabourame/PrasannaBrabourame/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
+-->
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16324F,55:2AA5A0,100:E8A33D&height=120&section=footer&text=Thanks%20for%20visiting%20%E2%9D%A4&fontSize=22&fontColor=ffffff&fontAlignY=75"/>
