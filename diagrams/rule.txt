@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 10" preserveAspectRatio="none"><path d="M7.7 3.1 C333.9 7.2 869.4 6.9 1193.9 6.8" fill="none" stroke="%23c9c4ba" stroke-width="1.60" stroke-linecap="round" opacity="1.00"/></svg>

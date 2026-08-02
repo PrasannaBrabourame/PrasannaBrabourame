@@ -1,0 +1,11 @@
+# build noise
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+package-lock.json
+
+# Source photographs. These are the ORIGINALS — the crowd shot still contains
+# the other person, and the illustration source is un-recoloured. The published
+# artwork is derived from them and committed; these do not need to be.
+diagrams/*-source.png
