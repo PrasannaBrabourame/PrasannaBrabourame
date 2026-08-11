@@ -240,6 +240,8 @@
     letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;
   }
   .case-grid .copy{max-width:38ch}
+  .case-grid.two{grid-template-columns:repeat(2,1fr)}
+  .case-grid.two .copy{max-width:46ch}
   .stack{
     margin-top:clamp(24px,3vw,34px);
     display:flex;flex-wrap:wrap;gap:7px;
@@ -650,7 +652,7 @@
 
   /* ---------- responsive ---------- */
   @media (max-width:920px){
-    .case-grid{grid-template-columns:1fr;gap:22px}
+    .case-grid,.case-grid.two{grid-template-columns:1fr;gap:22px}
     .case-grid .copy{max-width:52ch}
     .creds{grid-template-columns:1fr;gap:24px}
   }
@@ -733,7 +735,7 @@
     <div class="hero-words">
       <p class="eyebrow reveal">Forward Deployed AI Specialist · Singapore</p>
       <h1 class="reveal">A demo has to work&nbsp;once. <em>Production has to work on the worst day of the quarter.</em></h1>
-      <p class="lede reveal">I'm Prasanna Brabourame. I embed with teams building AI into regulated work — certification, compliance, security, education — and take the system the whole way: the interface, the pipeline, the security model, and the part that keeps running after everyone has gone home.</p>
+      <p class="lede reveal">I'm Prasanna Brabourame. I embed with teams building AI into regulated work: certification, compliance, security, education. Then I take the system the whole way — the interface, the pipeline, the security model, and the part that keeps running after everyone has gone home.</p>
       <div class="hero-meta reveal">
         <span class="chip now">Currently at NCS AI Central</span>
         <span class="chip">10+ years shipping</span>
@@ -774,7 +776,7 @@
     <h2 class="reveal">Most AI projects don't fail at the model.</h2>
     <p class="lede reveal">They fail in the gap between something that impressed a room and something an officer can defend to a regulator. That gap is where I work.</p>
 
-    <p class="gap-claim reveal">A demo is judged on its best output. A production system is judged on <mark>its worst one</mark> — the malformed response at 2am, the rate limit during an audit window, the confident answer that was <mark class="t">quietly wrong</mark>. Everything I build assumes that day has already been scheduled.</p>
+    <p class="gap-claim reveal">A demo is judged on its best output. A production system is judged on <mark>its worst one</mark>: the malformed response nobody was awake for, the rate limit during an audit window, the confident answer that was <mark class="t">quietly wrong</mark>. Everything I build assumes that day has already been scheduled.</p>
     <figure class="sketch reveal switcher" id="reality">
       <p class="sw-lead reveal">One pipeline. Pick a way production tests it.</p>
       <div class="switch" role="group" aria-label="Choose a production scenario">
@@ -792,12 +794,12 @@
       <div class="sc-notes" aria-live="polite">
         <p class="sc-note on" data-for="demo">One request, one model, one answer, in front of an audience. Every arrow below this row is something the demo never had to survive.</p>
         <p class="sc-note" data-for="scale">The gateway rate-limits during the exact hour of an audit, and a serverless worker cold-starts under concurrency it has never seen. Caught by backoff with jitter, a queue that holds order, and a warm path for the calls that cannot wait.</p>
-        <p class="sc-note" data-for="malformed">Fenced JSON, a truncated array, a stray control character. Caught by strict schema validation, layered salvage, and a deterministic fallback — so a bad response spoils one row of a report, never the queue behind it.</p>
-        <p class="sc-note" data-for="injection">A retrieved document contains instructions, and the agent reads them as its own. Caught by provenance on every chunk, an allow-list on the tools it can reach, and an output policy that refuses actions the request never asked for.</p>
-        <p class="sc-note" data-for="context">The window fills with everything, ranked by nothing, and the answer quietly gets worse as the input gets bigger. Caught by a token budget, reranking, rolling summarisation, and eviction that is deliberate rather than accidental.</p>
-        <p class="sc-note" data-for="memory">Yesterday's session leaks into today's answer, and nobody can reproduce either. Caught by state scoped to a conversation, a TTL that actually expires, and a session you can replay to see what the agent believed at the time.</p>
-        <p class="sc-note" data-for="leakage">A name, an NRIC, a salary heading somewhere it should not — into a log, a prompt, or another region. Caught by redaction before the call, field-level controls, and residency enforced at the boundary rather than trusted.</p>
-        <p class="sc-note" data-for="cost">The bill arrives, and it is the same call ten thousand times. Caught by routing the easy work to a smaller model, caching what is deterministic, and a budget cap that trips before the invoice does.</p>
+        <p class="sc-note" data-for="malformed">Fenced JSON. A truncated array. A stray control character. Strict schema validation catches most of it, layered salvage recovers what it can, and a deterministic fallback takes whatever is left. A bad response spoils one row of a report; it never reaches the queue behind it.</p>
+        <p class="sc-note" data-for="injection">A retrieved document contains instructions, and the agent reads them as its own. Provenance travels with every chunk, the tools it can reach sit behind an allow-list, and an output policy refuses actions the request never asked for.</p>
+        <p class="sc-note" data-for="context">The window fills with everything, ranked by nothing, and the answer degrades as the input gets bigger. The fix is a token budget, reranking, rolling summarisation, and an eviction policy that someone actually chose.</p>
+        <p class="sc-note" data-for="memory">Yesterday's session leaks into today's answer, and nobody can reproduce either. State is scoped to a conversation, the TTL actually expires, and any session can be replayed to see what the agent believed at the time.</p>
+        <p class="sc-note" data-for="leakage">A name, an NRIC, a salary heading somewhere it should not: into a log, a prompt, or another region. Caught by redaction before the call, field-level controls, and residency enforced at the boundary rather than trusted.</p>
+        <p class="sc-note" data-for="cost">The bill arrives, and it is the same call ten thousand times. Route the easy work to a smaller model, cache what is deterministic, and set a budget cap that trips before the invoice does.</p>
         <p class="sc-note" data-for="audit">A regulator asks about one decision from four months ago. Caught by a decision trace that keeps the rule reference, the evidence, the model's proposal and the name of whoever overrode it.</p>
       </div>
       <figcaption>Nine readings of one architecture. Only the first one fits in a demo.</figcaption>
@@ -807,17 +809,17 @@
       <article class="principle reveal">
         <span class="glyph">{{SVG:g-stamp}}</span>
         <h3>The model is a component, not the architecture</h3>
-        <p class="copy">Where a decision is safety-critical or legally consequential, it is stamped from the rule book — expiry dates, prohibited terms, severity ratings. The model reads, summarises and proposes. It does not get the final word on anything that has to be defended.</p>
+        <p class="copy">Where a decision is safety-critical or legally consequential, it is stamped from the rule book: expiry dates, prohibited terms, severity ratings. The model reads, summarises and proposes. It does not get the final word on anything that has to be defended.</p>
       </article>
       <article class="principle reveal">
         <span class="glyph">{{SVG:g-brace}}</span>
         <h3>Malformed output is a normal Tuesday</h3>
-        <p class="copy">Models return fenced JSON, truncated arrays, stray control characters. I build layered recovery and deterministic fallbacks so a bad response degrades one row of a report — never the pipeline, never the queue behind it.</p>
+        <p class="copy">Models return fenced JSON, truncated arrays, stray control characters. I build layered recovery and deterministic fallbacks. The worst case is a single bad row in a report, not a stalled pipeline or a poisoned queue.</p>
       </article>
       <article class="principle reveal">
         <span class="glyph">{{SVG:g-eye}}</span>
         <h3>The system has to heal itself</h3>
-        <p class="copy">Long jobs die at function timeouts. Gateways rate-limit. Watchdogs sweep for stalled work, resume interrupted phases and mark what cannot be saved, so a human finds a clear error rather than a silent gap.</p>
+        <p class="copy">Long jobs die at function timeouts. Gateways rate-limit. Watchdogs sweep for stalled work, resume interrupted phases and mark what cannot be saved, so the failure surfaces as a clear error with a name on it.</p>
       </article>
     </div>
 
@@ -830,7 +832,7 @@
   <div class="wrap">
     <p class="eyebrow reveal">Selected work</p>
     <h2 class="reveal">Four AI platforms, in domains where a wrong answer is expensive.</h2>
-    <p class="lede reveal">Concept to delivery in each case — the use cases came from the people who do the work; the architecture, the build and the security model were mine.</p>
+    <p class="lede reveal">Concept to delivery in each case. The use cases came from the people who do the work; the architecture, the build and the security model were mine.</p>
     <p class="lede reveal" style="margin-top:14px">Clients, product names and figures are withheld. What follows is the shape of each problem and how it was solved, which is the part that transfers anyway.</p>
   </div>
 
@@ -842,18 +844,18 @@
         <span class="status">Deployed</span>
       </div>
       <h3 class="reveal">Certification document review</h3>
-      <p class="lede reveal">Certification officers used to read every supporting document page by page. This platform classifies each uploaded file, extracts its structured data, and validates it against the published certification conditions — turning a manual read into a findings-driven review the officer confirms or overrules.</p>
+      <p class="lede reveal">Certification officers used to read every supporting document page by page. This platform classifies each uploaded file, extracts its structured data, and validates it against the published certification conditions, turning a manual read into a findings-driven review the officer confirms or overrules.</p>
       <figure class="sketch reveal"><div class="sk-scroll">{{SVG:certify}}</div></figure>
       <div class="case-actor" data-actor="certify" aria-hidden="true"></div>
 
       <div class="case-grid">
         <div class="reveal">
           <h4>What I built</h4>
-          <p class="copy">The React officer console — intake, document workspace, review queue, audit log and PDF report — and the serverless backend behind it: an event-driven pipeline on Cloud Functions integrating two Singapore Government AI services, plus the rules engine encoding the certification conditions.</p>
+          <p class="copy">The React officer console (intake, document workspace, review queue, audit log and PDF report) and the serverless backend behind it: an event-driven pipeline on Cloud Functions integrating two Singapore Government AI services, plus the rules engine encoding the certification conditions.</p>
         </div>
         <div class="reveal">
-          <h4>The hard part</h4>
-          <p class="copy">Cross-document validation can only run once <em>every</em> document is extracted. A Firestore transaction acts as the barrier so the verification phase fires exactly once per document set — no duplicates, no half-validated applications, whatever order the uploads finish in.</p>
+          <h4>The barrier</h4>
+          <p class="copy">Cross-document validation can only run once <em>every</em> document is extracted. A Firestore transaction acts as the barrier so the verification phase fires exactly once per document set: no duplicates, no half-validated applications, whatever order the uploads finish in.</p>
         </div>
         <div class="reveal">
           <h4>Where the model stops</h4>
@@ -875,25 +877,23 @@
         <span class="status">Delivered</span>
       </div>
       <h3 class="reveal">Regulatory compliance review</h3>
-      <p class="lede reveal">Desktop review of regulated firms against a national AML/CFT rule book. Officers open a case, upload the evidence — policies, due-diligence forms, director IDs, screening records — and the platform returns severity-rated findings they can accept, edit or reject, with the edit history kept.</p>
+      <p class="lede reveal">Desktop review of regulated firms against a national AML/CFT rule book. Officers open a case, upload the evidence (policies, due-diligence forms, director IDs, screening records), and the platform returns severity-rated findings they can accept, edit or reject, with the edit history kept.</p>
       <figure class="sketch reveal"><div class="sk-scroll">{{SVG:comply}}</div></figure>
       <div class="case-actor" data-actor="comply" aria-hidden="true"></div>
 
 
-      <div class="case-grid">
+      <div class="case-grid two">
         <div class="reveal">
-          <h4>What I built</h4>
-          <p class="copy">The solution design and compliance data model, a React 19 review interface, and a Python Cloud Functions analysis engine that runs each rule down two tracks at once — an LLM judgement track and deterministic field validators — before assembling the finding.</p>
+          <h4>The build</h4>
+          <p class="copy">The solution design and compliance data model, a React 19 review interface, and a Python Cloud Functions analysis engine that runs each rule down two tracks at once: an LLM judgement track and deterministic field validators. The finding is assembled from both.</p>
         </div>
         <div class="reveal">
-          <h4>The hard part</h4>
+          <h4>Traceable to a clause</h4>
           <p class="copy">A finding a regulator can act on has to be traceable to a clause. Severity is stamped from the rule book, never inferred by the model, and every finding carries its evidence, its rule reference and its full officer edit history.</p>
         </div>
-        <div class="reveal">
-          <h4>Around the edges</h4>
-          <p class="copy">Deny-by-default Firestore and Storage rules, role-based access across analyst, approver and admin, upload allowlists by MIME and size, admin editors for the rule book and document checklist, and PDF export of the completed review.</p>
-        </div>
       </div>
+
+      <p class="copy reveal" style="margin-top:clamp(22px,2.8vw,32px);max-width:62ch">Everything else was the usual regulated-platform furniture: deny-by-default Firestore and Storage rules, role-based access across analyst, approver and admin, upload allowlists by MIME and size, admin editors for the rule book and document checklist, and PDF export of the completed review.</p>
 
       <div class="stack reveal">
         <span>React 19</span><span>Python 3.12</span><span>Firebase Functions</span><span>Firestore</span><span>AISay</span><span>Gemini · LLMaaS</span><span>Northflank</span><span>Docker</span>
@@ -915,15 +915,15 @@
 
       <div class="case-grid">
         <div class="reveal">
-          <h4>What I built</h4>
-          <p class="copy">A provider-plugin core where source control, issue trackers, notification channels and LLM providers are all swappable adapters — new providers drop in without touching the remediation logic — over a layered Express/TypeScript backend and a Prisma/PostgreSQL model.</p>
+          <h4>Architecture</h4>
+          <p class="copy">A provider-plugin core where source control, issue trackers, notification channels and LLM providers are all swappable adapters, so new providers drop in without touching the remediation logic. It sits over a layered Express/TypeScript backend and a Prisma/PostgreSQL model.</p>
         </div>
         <div class="reveal">
-          <h4>The hard part</h4>
-          <p class="copy">Letting a model write code that reaches a repository. The fix engine works on a dedicated branch, runs the target's own test suite, and pushes only on green; anything else is flagged for a human. An approval gate sits in front, with auto-approve reserved for low-risk policy classes.</p>
+          <h4>Letting a model near a repository</h4>
+          <p class="copy">The fix engine works on a dedicated branch, runs the target's own test suite, and pushes only on green; anything else is flagged for a human. An approval gate sits in front, with auto-approve reserved for low-risk policy classes.</p>
         </div>
         <div class="reveal">
-          <h4>Around the edges</h4>
+          <h4>Reporting</h4>
           <p class="copy">Cross-source de-duplication and correlation, severity-weighted risk scoring with historical trends, OWASP Top 10 coverage reporting, executive PDF and PowerPoint exports, MTTR metrics, and a token-usage dashboard so the AI spend stays visible.</p>
         </div>
       </div>
@@ -949,16 +949,16 @@
 
       <div class="case-grid">
         <div class="reveal">
-          <h4>What I built</h4>
+          <h4>Three tiers</h4>
           <p class="copy">Three tiers and the cloud around them: a Go/Gin backend with two-factor sign-in, Excel ingest and a four-strategy name resolver; a Next.js teacher app; and a Python AI tier on Vertex AI Agent Engine running a retrieval → summarisation → evaluation agent sequence.</p>
         </div>
         <div class="reveal">
-          <h4>The hard part</h4>
-          <p class="copy">Teacher spreadsheets don't spell children's names the way the warehouse does. The name resolver works through four strategies before it gives up, because an unmatched row is a child with no insight — and a silently mismatched one is worse.</p>
+          <h4>Names</h4>
+          <p class="copy">Teacher spreadsheets don't spell children's names the way the warehouse does. The name resolver works through four strategies before it gives up, because an unmatched row is a child with no insight, and a silently mismatched one is worse.</p>
         </div>
         <div class="reveal">
-          <h4>Around the edges</h4>
-          <p class="copy">A two-zone network design, per-IP rate limiting, upload hardening and personal-data redaction in logs — this is children's data. Plus an offline evaluation harness for tuning prompts and cost, and a formal handover package at the end.</p>
+          <h4>Hardening</h4>
+          <p class="copy">A two-zone network design, per-IP rate limiting, upload hardening and personal-data redaction in logs. This is children's data. Plus an offline evaluation harness for tuning prompts and cost, and a formal handover package at the end.</p>
         </div>
       </div>
 
@@ -973,8 +973,8 @@
 <section class="band" id="how">
   <div class="wrap">
     <p class="eyebrow reveal">How I work</p>
-    <h2 class="reveal">Embedded, not delivered from a distance.</h2>
-    <p class="lede reveal">Forward deployed means what it sounds like: I work inside your constraints, your data rules and your definition of done — not from a statement of work written before anyone had seen the problem.</p>
+    <h2 class="reveal">Embedded with the team that owns the problem.</h2>
+    <p class="lede reveal">Forward deployed means what it sounds like: I work inside your constraints, your data rules and your definition of done, not from a statement of work written before anyone had seen the problem.</p>
       <figure class="sketch reveal stack-fig">
         <div class="sk-scroll">{{SVG:stack}}</div>
         <p class="layer-note" id="layerNote" aria-live="polite"><span>Pick a layer &mdash; or tab through them.</span></p>
@@ -985,8 +985,8 @@
 
     <div class="grid2">
       <article class="principle reveal">
-        <h3>I start in your use cases, not my architecture</h3>
-        <p class="copy">Every platform above began as a set of use cases from the people who do the work. The design followed the constraints they described — the regulation, the review workflow, the thing nobody writes down — rather than the reverse.</p>
+        <h3>Your use cases come before my architecture</h3>
+        <p class="copy">Every platform above began as a set of use cases from the people who do the work. The design followed the constraints they described: the regulation, the review workflow, the thing nobody writes down. The architecture came afterwards.</p>
       </article>
       <article class="principle reveal">
         <h3>I work across the whole stack</h3>
@@ -998,11 +998,10 @@
       </article>
       <article class="principle reveal">
         <h3>Built to be handed over</h3>
-        <p class="copy">Architecture documentation, environment templates, a security and cleanup review, and training material for the people who will use it. The reasoning stays with your team — the next thing they build shouldn't need me.</p>
+        <p class="copy">Architecture documentation, environment templates, a security and cleanup review, and training material for the people who will use it. The reasoning stays with your team, and the next thing they build shouldn't need me.</p>
       </article>
     </div>
 
-    <p class="marg reveal">The best sign a handover worked is that nobody calls.</p>
   </div>
 </section>
 
@@ -1011,14 +1010,14 @@
   <div class="wrap">
     <p class="eyebrow reveal">Track record</p>
     <h2 class="reveal">Ten years of shipping, in three phases.</h2>
-    <p class="lede reveal">Research and NLP before it was fashionable, then platform and product engineering, then AI back at the centre — this time with production consequences attached.</p>
+    <p class="lede reveal">Research and NLP before it was fashionable, then platform and product engineering, then AI back at the centre, this time with production consequences attached.</p>
       <figure class="sketch reveal track-stage" aria-hidden="false"><div class="sk-scroll">{{SVG:career}}</div><figcaption>Ten years, three phases, two countries — and the through-line.</figcaption></figure>
       <p class="marg left reveal">2019: Puducherry to Singapore, for a search engine.</p>
 
 
     <div class="track">
       <div class="role current reveal">
-        <div class="when">2026 — now</div>
+        <div class="when">2026 – now</div>
         <div>
           <h3>AI Implementation Strategist</h3>
           <p class="org">NCS AI Central · Forward Deployed Specialist · Singapore</p>
@@ -1026,23 +1025,23 @@
         </div>
       </div>
       <div class="role reveal">
-        <div class="when">2024 — 2026</div>
+        <div class="when">2024 – 2026</div>
         <div>
           <h3>Senior Consultant · Tech Lead &amp; Cloud Architect</h3>
           <p class="org">NCS Group · Gov+ programme</p>
-          <p class="copy">Cloud architecture and technical leadership on government platforms. ShiftRing AI — voice and chat customer support with natural-language understanding, multilingual responses and automated ticketing. Safe at Work, letting employers verify the Access Code status of Work Permit, S Pass and Employment Pass holders.</p>
+          <p class="copy">Cloud architecture and technical leadership on government platforms. ShiftRing AI: voice and chat customer support with natural-language understanding, multilingual responses and automated ticketing. Safe at Work, letting employers verify the Access Code status of Work Permit, S Pass and Employment Pass holders.</p>
         </div>
       </div>
       <div class="role reveal">
-        <div class="when">2023 — 2024</div>
+        <div class="when">2023 – 2024</div>
         <div>
           <h3>Tech Lead</h3>
           <p class="org">NCS Group · Singapore</p>
-          <p class="copy">Led the re-platform of FWMOMCare, the national migrant-worker health monitoring system, from a .NET monolith to Node.js/NestJS microservices with a MSSQL to PostgreSQL migration. Also Exit Pass — dormitory exit permissions and location quotas, integrated with SafeEntry and SGWorkPass — and MW Data Hub.</p>
+          <p class="copy">Led the re-platform of FWMOMCare, the national migrant-worker health monitoring system, from a .NET monolith to Node.js/NestJS microservices with a MSSQL to PostgreSQL migration. Also Exit Pass (dormitory exit permissions and location quotas, integrated with SafeEntry and SGWorkPass) and MW Data Hub.</p>
         </div>
       </div>
       <div class="role reveal">
-        <div class="when">2022 — 2023</div>
+        <div class="when">2022 – 2023</div>
         <div>
           <h3>Engineering Team Lead (R&amp;D) &amp; Principal Engineer</h3>
           <p class="org">2359 Media · Singapore</p>
@@ -1050,19 +1049,19 @@
         </div>
       </div>
       <div class="role reveal">
-        <div class="when">2019 — 2022</div>
+        <div class="when">2019 – 2022</div>
         <div>
           <h3>Senior Product Engineer</h3>
           <p class="org">Logical Steps · Singapore</p>
-          <p class="copy">Technical lead on the Ola conversational search suite — an NLP search engine on Solr, a context-aware query and intent engine, a voice-and-text chatbot, and a relevancy-tuning console. Also LNDDO, assessing SME creditworthiness from digital-footprint data, and CardsPe, offline-to-online commerce built from scratch.</p>
+          <p class="copy">Technical lead on the Ola conversational search suite: an NLP search engine on Solr, a context-aware query and intent engine, a voice-and-text chatbot, and a relevancy-tuning console. Also LNDDO, assessing SME creditworthiness from digital-footprint data, and CardsPe, offline-to-online commerce built from scratch.</p>
         </div>
       </div>
       <div class="role reveal">
-        <div class="when">2016 — 2019</div>
+        <div class="when">2016 – 2019</div>
         <div>
           <h3>Senior Programmer · Innovation &amp; Research</h3>
           <p class="org">Integra Software Services · Puducherry, India</p>
-          <p class="copy">Architecture and framework design in the publishing domain. Built iNLP — custom spaCy NER models, language detection routing into neural machine translation, de-duplication at scale, transfer learning with BERT, GPT-2 and T5. Designed iAuthor/iCorrectProof from scratch as Scrum Master, and an in-browser rendering engine whose R&amp;D led to a patent application.</p>
+          <p class="copy">Architecture and framework design in the publishing domain. Built iNLP: custom spaCy NER models, language detection routing into neural machine translation, de-duplication at scale, transfer learning with BERT, GPT-2 and T5. Designed iAuthor/iCorrectProof from scratch as Scrum Master, and an in-browser rendering engine whose R&amp;D led to a patent application.</p>
         </div>
       </div>
     </div>
@@ -1076,7 +1075,7 @@
       </div>
       <div class="cred reveal">
         <h4>Recent certification</h4>
-        <p>Anthropic — Claude Platform, Claude Code, Model Context Protocol (incl. Advanced Topics), Agent Skills, AI Fluency. Microsoft Applied Skills — AI research agents. NUS-ISS ICT Assessment for Software Developer.</p>
+        <p>Anthropic: Claude Platform, Claude Code, Model Context Protocol (incl. Advanced Topics), Agent Skills, AI Fluency. Microsoft Applied Skills for AI research agents. NUS-ISS ICT Assessment for Software Developer.</p>
       </div>
       <div class="cred reveal">
         <h4>Also</h4>
@@ -1120,7 +1119,7 @@
   <div class="wrap">
     <p class="eyebrow reveal">Certification &amp; continuous learning</p>
     <h2 class="reveal">The tools change every quarter. Staying fluent is part of the job.</h2>
-    <p class="lede reveal">None of this substitutes for having shipped something. It is how I stay current with tools that did not exist eighteen months ago — and the trail happens to record what I was learning, and when.</p>
+    <p class="lede reveal">None of this substitutes for having shipped something. It is how I stay current with tools that did not exist eighteen months ago. The trail happens to record what I was learning, and when.</p>
 
     <figure class="sketch reveal"><div class="sk-scroll">{{SVG:learning}}</div></figure>
     <div class="case-actor" data-actor="learn" aria-hidden="true"></div>
@@ -1129,7 +1128,7 @@
       <div class="cred reveal">
         <h4>Google Cloud</h4>
         <p><b>Diamond League · 13,895 points</b><br>
-        38 skill badges in 2026 — Vertex AI Search and data stores, Gemini Enterprise,
+        38 skill badges in 2026: Vertex AI Search and data stores, Gemini Enterprise,
         the Agent Development Kit, agent memory, tools and guardrails, MLOps for generative
         AI, and the cloud foundations track.<br>
         <a href="https://www.skills.google/public_profiles/b37f16ea-e52a-411c-a350-d7e9fb01360e">Public profile →</a></p>
@@ -1151,7 +1150,6 @@
       </div>
     </div>
 
-    <p class="marg reveal">Forty-five certificates and one patent application. The patent took longer.</p>
   </div>
 </section>
 
@@ -1160,10 +1158,10 @@
   <div class="wrap">
     <p class="eyebrow reveal">A short self-check</p>
     <h2 class="reveal">Is your AI ready to be depended on?</h2>
-    <p class="lede reveal">Five questions — the same ones I'd ask in the first fifteen minutes of a call. There's no score at the end, just an honest reflection on where you stand.</p>
+    <p class="lede reveal">Five questions, the same ones I'd ask in the first fifteen minutes of a call. There's no score at the end, just an honest reflection on where you stand.</p>
     <div class="convo" id="convo" aria-live="polite"></div>
     <noscript>
-      <p class="copy" style="margin-top:28px">This one needs JavaScript. The short version: find out how you learn that the model was wrong, whether the person affected can overrule it, and what would happen if it failed quietly at 2am. If any of those three has no answer, that's where to start.</p>
+      <p class="copy" style="margin-top:28px">This one needs JavaScript. The short version: find out how you learn that the model was wrong, whether the person affected can overrule it, and what would happen if it failed silently over a weekend. If any of those three has no answer, that's where to start.</p>
     </noscript>
   </div>
 </section>
@@ -1173,7 +1171,7 @@
   <div class="wrap contact-wrap">
     <div>
       <h2 class="reveal">Start with the awkward problem.</h2>
-      <p class="copy reveal">Fifteen minutes. Describe the thing that keeps not working — the manual review nobody can keep up with, the AI pilot that never made it past the demo, the system nobody trusts enough to act on. I'll tell you honestly whether it's worth building and what I'd try first. No deck, no proposal.</p>
+      <p class="copy reveal">Fifteen minutes. Describe the thing that keeps not working: the manual review nobody can keep up with, the AI pilot that never made it past the demo, the system nobody trusts enough to act on. I'll tell you honestly whether it's worth building and what I'd try first. No deck, no proposal.</p>
       <div class="direct reveal">
         <a href="mailto:prasanna18101994@gmail.com"><span class="k">Email</span> prasanna18101994@gmail.com</a>
         <a href="https://calendly.com/prasannabrabourame/15min"><span class="k">Calendar</span> Book 15 minutes</a>
@@ -1846,10 +1844,10 @@
     { q: "Where does your AI actually run today?",
       a: [
         ["In a notebook, or a demo", 0,
-         "Then the interesting work hasn't started yet — and that's not a criticism. A demo is how you find out whether the idea has legs. It just isn't the same object as a system."],
+         "Then the interesting work hasn't started yet, and that's not a criticism. A demo is how you find out whether the idea has legs. It just isn't the same object as a system."],
         ["A pilot, with real users", 1,
          "The most informative place to be. Pilots surface the constraints nobody wrote down, which is exactly what you want to know before you harden anything."],
-        ["In production — people depend on it", 2,
+        ["In production, people depend on it", 2,
          "Then the four questions that follow are the ones that decide whether that dependence is safe."]
       ]},
     { q: "When the model gets something wrong, how do you find out?",
@@ -1857,7 +1855,7 @@
         ["A user tells us", 0,
          "The expensive way to learn. Every wrong answer spends trust you then have to earn back, and you rarely hear about the ones people quietly worked around."],
         ["It's in a log somewhere", 1,
-         "Better — but a log is a record, not a control. It tells you what happened; it doesn't stop the next one."],
+         "Better, but a log is a record, not a control. It tells you what happened; it doesn't stop the next one."],
         ["A deterministic check catches it first", 2,
          "That's the one that matters. If a rule can be written down, it shouldn't be inferred."]
       ]},
@@ -1868,7 +1866,7 @@
         ["They can ask someone", 1,
          "Which makes the AI something that happens to them rather than a tool they hold. Workable, but it caps how much they'll rely on it."],
         ["Yes, and they can overrule it", 2,
-         "Then you've built something people will actually use — rarer than it sounds."]
+         "Then you've built something people will actually use. Rarer than it sounds."]
       ]},
     { q: "Who could explain the whole pipeline, end to end?",
       a: [
@@ -1882,18 +1880,18 @@
     { q: "If it failed quietly at 2am on a Saturday, what would happen?",
       a: [
         ["We'd find out on Monday", 0,
-         "Which means the failure you should plan for isn't a crash — it's a silence. Those are the ones that cost a weekend of reconciliation."],
+         "Which means the failure you should plan for isn't a crash. It's a silence. Those are the ones that cost a weekend of reconciliation."],
         ["Someone would get paged", 1,
          "Good. The next question is whether they'd have anything useful to act on when they woke up."],
         ["It retries, and a watchdog sweeps up the rest", 2,
-         "Then the unglamorous half is done — and that's the half that decides whether this is still running in six months."]
+         "Then the unglamorous half is done, and that's the half that decides whether this is still running in six months."]
       ]}
   ];
 
   var CLOSE = [
     [0, 3, "Reading that back: you're earlier than you might like to be, and you're asking the right questions anyway. The useful next step is almost never a bigger platform — it's one narrow change, small enough to reverse, with the measure agreed before it starts."],
     [4, 7, "That's the normal place to be: something real is running, and the scaffolding around it hasn't caught up yet. Pick the weakest of the five above and fix only that. It's usually cheaper than it looks, and it's usually the reason nobody quite trusts the system."],
-    [8, 10, "You're further along than most of what I see, which means the remaining wins are narrow and specific rather than structural. Those are the interesting conversations — worth half an hour to find the one thing still worth doing."]
+    [8, 10, "You're further along than most of what I see, which means the remaining wins are narrow and specific rather than structural. Those are the interesting conversations, worth half an hour to find the one thing still worth doing."]
   ];
 
   var convo = document.getElementById("convo");
@@ -2081,7 +2079,7 @@
     })
       .then(function (res) { if (!res.ok) throw new Error("failed"); })
       .then(function () {
-        note.textContent = "Thanks — I'll be in touch shortly.";
+        note.textContent = "Thanks, I'll be in touch shortly.";
         send.textContent = "Sent";
         form.reset();
       })
