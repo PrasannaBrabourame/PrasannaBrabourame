@@ -129,12 +129,46 @@ python3 build.py
 SITE_URL=https://prasannabrabourame.com python3 build.py
 ```
 
+## The contact form
+
+Set `CONTACT_ENDPOINT` and the form POSTs JSON — `{name, email, organization,
+problem}` — to it, expecting any 2xx back:
+
+```bash
+CONTACT_ENDPOINT=https://formspree.io/f/xxxxxxx python3 build.py
+```
+
+It must be `https://`; `build.py` refuses anything else. Anything that accepts a
+JSON POST works — Formspree, Web3Forms, a Cloudflare Worker, your own handler.
+
+**Leave it unset and the Send button only opens a `mailto:` draft**, which does
+nothing at all for a visitor whose browser has no mail client registered. That is
+most people on a work laptop using webmail. Set it before you rely on the form.
+
+If the request fails or takes longer than 12 seconds, the form hands back a
+`mailto:` link with everything they typed already in the draft, so a bad endpoint
+loses a click rather than an enquiry.
+
+## Fonts
+
+The three webfonts are vendored into `docs/fonts/` so the page makes no
+third-party requests. They are committed; you only need to re-run this when the
+font stack itself changes:
+
+```bash
+python3 fonts.py
+```
+
+It writes `fonts.css`, which `build.py` inlines into the page. All three families
+are SIL Open Font License 1.1 — `docs/fonts/OFL.txt` records that.
+
 ## Requirements on your machine
 
 | For | Needs |
 |---|---|
 | Building the page | Python 3 only — no packages |
 | Running the tests | Node 18+, and `npm install --no-save jsdom` (publish.sh does it) |
+| Re-vendoring the **fonts** | Python 3 and a network connection |
 | Regenerating the **artwork** | `pip install opencv-python pillow`, plus the two source photographs from `Resume/source-art/` |
 
 The artwork is already generated and committed. You only need that third row if you want

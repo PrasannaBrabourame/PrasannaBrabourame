@@ -9,15 +9,18 @@ echo "── regenerating the drawings"
 echo "   ok"
 
 echo "── building docs/"
+if [ ! -f fonts.css ]; then
+  echo "   vendoring the webfonts (once)"; python3 fonts.py
+fi
 python3 build.py
 
 echo "── tests"
 if [ ! -d node_modules/jsdom ]; then
   echo "   installing jsdom (once)"; npm install --no-save --silent jsdom
 fi
-for t in test-page test-reduced-motion test-walk-strip test-ambient test-confidentiality; do
+for t in test-page test-reduced-motion test-walk-strip test-ambient test-confidentiality test-features; do
   printf "   %-26s " "$t"
-  node "$t.mjs"
+  node "$t.mjs" < /dev/null
 done
 
 echo
