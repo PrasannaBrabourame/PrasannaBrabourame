@@ -588,6 +588,11 @@
   .colophon a{color:var(--body);text-decoration:none;border-bottom:1px solid var(--rule)}
   .colophon a:hover{color:var(--ink)}
   .colophon .links{display:flex;gap:16px;flex-wrap:wrap}
+  /* Revealed by script only once a real number arrives, so a counter service
+     that is slow, blocked or gone leaves no trace instead of an empty label. */
+  .tally{color:var(--faint)}
+  .tally[hidden]{display:none}
+  .tally::before{content:"\00a0·\00a0"}
 
   /* ---------- hero illustration ---------- */
   .hero-grid{
@@ -1456,7 +1461,8 @@
 <footer>
   <div class="wrap">
     <div class="colophon">
-      <span>&copy; <span id="yr">2026</span> Prasanna Brabourame &nbsp;·&nbsp; Singapore</span>
+      <span>&copy; <span id="yr">2026</span> Prasanna Brabourame &nbsp;·&nbsp; Singapore<span
+        class="tally" id="tally" hidden></span></span>
       <span class="links">
         <a href="https://linkedin.com/in/prasannabrabourame">LinkedIn</a>
         <a href="https://github.com/PrasannaBrabourame">GitHub</a>
@@ -1475,6 +1481,49 @@
 
   /* year */
   document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* visit tally
+     ------------------------------------------------------------------
+     COUNTER is baked in at build time from COUNTER_ENDPOINT. It must
+     return JSON with a numeric `value`. The element ships hidden and is
+     only revealed once a real number lands, so a service that is slow,
+     blocked by a content blocker, or discontinued leaves the footer
+     exactly as it was rather than showing a stuck "…" or a NaN.
+     ------------------------------------------------------------------ */
+  (function () {
+    var COUNTER = "https://abacus.jasoncameron.dev/hit/prasannabrabourame-site/visits";
+    var el = document.getElementById("tally");
+    if (!el || !COUNTER || !window.fetch) return;
+
+    var ctl = window.AbortController ? new AbortController() : null;
+    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 6000);
+
+    fetch(COUNTER, { signal: ctl ? ctl.signal : undefined })
+      .then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+      .then(function (j) {
+        clearTimeout(timer);
+        var n = typeof j.value === "number" ? j.value : parseInt(j.value, 10);
+        if (!isFinite(n) || n < 0) throw new Error("no usable count");
+        show(Math.floor(n));
+      })
+      .catch(function () { clearTimeout(timer); });   /* stays hidden, deliberately */
+
+    function label(n) {
+      return n.toLocaleString() + (n === 1 ? " visit" : " visits");
+    }
+
+    function show(n) {
+      el.hidden = false;
+      if (reduce || !window.requestAnimationFrame) { el.textContent = label(n); return; }
+      var t0 = null;
+      requestAnimationFrame(function step(ts) {
+        if (t0 === null) t0 = ts;
+        var p = Math.min(1, (ts - t0) / 900);
+        el.textContent = label(Math.round(n * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) requestAnimationFrame(step);
+      });
+    }
+  })();
 
   /* theme
      ------------------------------------------------------------------
