@@ -268,7 +268,86 @@ function boot({ prefersDark = false, stored = null } = {}) {
   void d;
 }
 
+/* ─────────── footer visit tally ─────────── */
+{
+  check(!/\{\{COUNTER_ENDPOINT\}\}/.test(html), "tally: endpoint placeholder not substituted");
+  const ep = code.match(/var COUNTER = "([^"]*)"/);
+  check(ep, "tally: COUNTER not found");
+  check(ep && (ep[1] === "" || /^https:\/\//.test(ep[1])), "tally: endpoint must be https or empty");
+
+  const { d } = boot();
+  const el = d.getElementById("tally");
+  check(el, "tally: no element in the footer");
+  check(el && el.hasAttribute("hidden"),
+    "tally: must ship hidden — an empty label is worse than no label");
+  check(el && el.closest(".colophon"), "tally: not in the colophon");
+  check(/\.tally\[hidden\]\{display:none\}/.test(css), "tally: hidden state not enforced in CSS");
+}
+
+// helper: boot with a stubbed fetch and let the promise chain settle
+async function tally({ reply, reduced = false }) {
+  const dom = new JSDOM(html, {
+    runScripts: "outside-only", pretendToBeVisual: true, url: "https://example.test/"
+  });
+  const w = dom.window;
+  w.matchMedia = q => ({
+    matches: reduced && /reduced-motion/.test(q),
+    addEventListener() {}, removeEventListener() {}, addListener() {}, removeListener() {}
+  });
+  w.SVGElement.prototype.getTotalLength = () => 120;
+  w.IntersectionObserver = class { constructor(cb) { this.cb = cb; } observe() {} unobserve() {} };
+  let raf = [];
+  w.requestAnimationFrame = cb => { raf.push(cb); return raf.length; };
+  w.cancelAnimationFrame = () => { raf = []; };
+  w.AbortController = class { constructor() { this.signal = {}; } abort() {} };
+  w.fetch = () => reply();
+  w.eval(code);
+  await new Promise(r => setTimeout(r, 40));
+  // drive the count-up to completion: the clock has to actually move, and the
+  // second frame has to land past the 900ms duration
+  let now = 0;
+  for (let i = 0; i < 8 && raf.length; i++) {
+    const q = raf; raf = [];
+    q.forEach(cb => cb(now));
+    now += 1000;
+  }
+  return w.document.getElementById("tally");
+}
+
+{
+  const el = await tally({ reply: () => Promise.resolve({ ok: true, json: () => Promise.resolve({ value: 1204 }) }) });
+  check(!el.hidden, "tally: stayed hidden despite a good response");
+  check(/1,204/.test(el.textContent), `tally: number not formatted — got "${el.textContent}"`);
+  check(/visits/.test(el.textContent), "tally: no unit label");
+}
+{
+  const el = await tally({ reply: () => Promise.resolve({ ok: true, json: () => Promise.resolve({ value: 1 }) }) });
+  check(/^1 visit$/.test(el.textContent.trim()), `tally: singular not handled — got "${el.textContent}"`);
+}
+{
+  // the whole point: a dead service must leave the footer untouched
+  const el = await tally({ reply: () => Promise.reject(new Error("offline")) });
+  check(el.hidden, "tally: a failed request revealed an empty label");
+  check(el.textContent === "", "tally: wrote something despite a failed request");
+}
+{
+  const el = await tally({ reply: () => Promise.resolve({ ok: false, status: 503, json: () => Promise.resolve({}) }) });
+  check(el.hidden, "tally: a 503 still revealed the label");
+}
+{
+  const el = await tally({ reply: () => Promise.resolve({ ok: true, json: () => Promise.resolve({ value: "not-a-number" }) }) });
+  check(el.hidden, "tally: garbage payload revealed the label");
+}
+{
+  const el = await tally({
+    reply: () => Promise.resolve({ ok: true, json: () => Promise.resolve({ value: 512 }) }),
+    reduced: true
+  });
+  check(!el.hidden && /^512 visits$/.test(el.textContent.trim()),
+    `tally: reduced motion should set the final number outright — got "${el.textContent}"`);
+}
+
 console.log(fail.length
   ? "FAIL\n - " + fail.join("\n - ")
-  : `theme / jsonld / fonts / 404 / contact clean (${checks} checks)`);
+  : `theme / jsonld / fonts / 404 / contact / tally clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);
