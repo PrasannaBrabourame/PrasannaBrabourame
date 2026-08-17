@@ -22,6 +22,16 @@ if CONTACT_ENDPOINT and not CONTACT_ENDPOINT.startswith("https://"):
 if '"' in CONTACT_ENDPOINT or "\\" in CONTACT_ENDPOINT:
     sys.exit("CONTACT_ENDPOINT contains characters that would break out of the JS string")
 
+# The footer visit tally. Must return JSON with a numeric `value`. Set to an
+# empty string to drop the counter — and the third-party request with it.
+COUNTER_ENDPOINT = os.environ.get(
+    "COUNTER_ENDPOINT",
+    "https://abacus.jasoncameron.dev/hit/prasannabrabourame-site/visits").strip()
+if COUNTER_ENDPOINT and not COUNTER_ENDPOINT.startswith("https://"):
+    sys.exit("COUNTER_ENDPOINT must be an https:// URL, got: %r" % COUNTER_ENDPOINT)
+if '"' in COUNTER_ENDPOINT or "\\" in COUNTER_ENDPOINT:
+    sys.exit("COUNTER_ENDPOINT contains characters that would break out of the JS string")
+
 HERE = pathlib.Path(__file__).parent
 TPL = HERE / "template.html"
 DIA = HERE / "diagrams"
@@ -96,6 +106,7 @@ def main():
 
     html = html.replace("{{SITE_URL}}", SITE_URL)
     html = html.replace("{{CONTACT_ENDPOINT}}", CONTACT_ENDPOINT)
+    html = html.replace("{{COUNTER_ENDPOINT}}", COUNTER_ENDPOINT)
     left = re.findall(r"\{\{[A-Za-z0-9_:-]+\}\}", html)
     if left:
         sys.exit("unresolved placeholders: %s" % sorted(set(left)))
@@ -143,6 +154,11 @@ def main():
     else:
         print("contact:   NOT SET — the form only opens a mail draft.\n"
               "           Fix with:  CONTACT_ENDPOINT=https://... python3 build.py")
+    if COUNTER_ENDPOINT:
+        print("counter:   %s" % COUNTER_ENDPOINT)
+        print("           ^ the page's only third-party request. COUNTER_ENDPOINT= to drop it.")
+    else:
+        print("counter:   off — no third-party requests at all")
     print("\nnext:  git add docs && git commit -m 'Update site' && git push")
 
 
