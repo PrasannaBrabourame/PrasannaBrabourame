@@ -149,6 +149,37 @@ If the request fails or takes longer than 12 seconds, the form hands back a
 `mailto:` link with everything they typed already in the draft, so a bad endpoint
 loses a click rather than an enquiry.
 
+## The visit counter
+
+The footer shows a visit tally, next to the copyright line. `COUNTER_ENDPOINT`
+sets where the count comes from; it must return JSON with a numeric `value`:
+
+```bash
+COUNTER_ENDPOINT=https://abacus.jasoncameron.dev/hit/prasannabrabourame-site/visits python3 build.py
+```
+
+That is the default, so a plain `python3 build.py` already has it. To remove the
+counter — and with it the only third-party request the page makes:
+
+```bash
+COUNTER_ENDPOINT= python3 build.py
+```
+
+Three things worth knowing about it:
+
+- **It is the page's only third-party request.** Everything else, fonts included,
+  is served from your own origin. Visitors' IPs reach `abacus.jasoncameron.dev`.
+- **Anyone can inflate it.** The increment endpoint is a public unauthenticated
+  GET. Treat the number as decoration, not analytics. If you want numbers you can
+  actually reason about, use GoatCounter or Plausible instead.
+- **It fails invisibly by design.** The element ships with `hidden` and is only
+  revealed once a real number arrives. If the service is slow, blocked by a
+  content blocker, or discontinued, the footer looks exactly as it did before —
+  no stuck ellipsis, no `NaN`. `test-features.mjs` covers all four failure modes.
+
+This is separate from the `komarev` badge in `README.md`, which counts **GitHub
+profile views**, not visits to this site.
+
 ## Fonts
 
 The three webfonts are vendored into `docs/fonts/` so the page makes no
