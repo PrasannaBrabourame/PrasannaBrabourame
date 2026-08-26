@@ -235,17 +235,57 @@ timeline
   <img src="https://img.shields.io/badge/Claude_Code-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
 </p>
 
-**📈 Evaluation, observability & retrieval**
+**📈 Evaluation & observability**
+
+> An AI change you cannot measure is a rumour.
 
 <p>
+  <img src="https://img.shields.io/badge/DeepEval-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Ragas-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Promptfoo-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/LangSmith-E8A33D?style=for-the-badge&logo=langchain&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Weights_&_Biases-E8A33D?style=for-the-badge&logo=weightsandbiases&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/RAG-E8A33D?style=for-the-badge&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Vertex_AI_Search-E8A33D?style=for-the-badge&logo=googlecloud&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/pgvector-E8A33D?style=for-the-badge&logo=postgresql&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Pinecone-E8A33D?style=for-the-badge&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Eval_Harnesses-E8A33D?style=for-the-badge&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Token_&_Cost_Budgets-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/TruLens-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Arize_Phoenix-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/W&B_Weave-E8A33D?style=for-the-badge&logo=weightsandbiases&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Agent_Trajectory_Eval-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/LLM--as--Judge-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Golden_Datasets-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Regression_Suites-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/OpenTelemetry-E8A33D?style=for-the-badge&logo=opentelemetry&logoColor=16324F"/>
+</p>
+
+**⚡ Optimisation — cost, latency, context**
+
+> The bill and the latency are design outputs, not accidents.
+
+<p>
+  <img src="https://img.shields.io/badge/Caveman_Prompting-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Context_Headroom-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LLM_Wiki-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prompt_Caching-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Semantic_Caching-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Model_Routing_&_Cascades-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Context_Compression-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rolling_Summarisation-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Reranking-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/KV--Cache_Reuse-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Batching-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Structured_Outputs-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Distillation-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Quantisation-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Token_&_Cost_Budgets-16324F?style=for-the-badge&logoColor=white"/>
+</p>
+
+**🔍 Retrieval**
+
+<p>
+  <img src="https://img.shields.io/badge/RAG-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vertex_AI_Search-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pgvector-2AA5A0?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pinecone-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Hybrid_Search-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Chunking_Strategies-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Provenance_per_Chunk-2AA5A0?style=for-the-badge&logoColor=white"/>
 </p>
 
 **🔬 ML & NLP foundations**
