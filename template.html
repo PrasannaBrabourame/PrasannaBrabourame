@@ -524,6 +524,14 @@
   .colophon a{color:var(--body);text-decoration:none;border-bottom:1px solid var(--rule)}
   .colophon a:hover{color:var(--ink)}
   .colophon .links{display:flex;gap:16px;flex-wrap:wrap}
+  /* Build stamp. The date is baked in by build.py, not computed in the browser:
+     a reader wants to know when the page was last published, not what today is. */
+  .built{
+    margin:0;padding:0 0 34px;font-size:11.5px;letter-spacing:.02em;
+    color:var(--faint);font-family:var(--mono);
+  }
+  .built a.rev{color:var(--faint);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .built a.rev:hover{color:var(--ink);border-bottom-color:var(--ink)}
   /* Revealed by script only once a real number arrives, so a counter service
      that is slow, blocked or gone leaves no trace instead of an empty label. */
   .tally{color:var(--faint)}
@@ -1407,6 +1415,7 @@
         <a href="mailto:prasanna18101994@gmail.com">Email</a>
       </span>
     </div>
+    <p class="built">Last updated <time datetime="{{BUILT_ISO}}">{{BUILT_HUMAN}}</time>{{BUILT_REV_HTML}}</p>
   </div>
 </footer>
 

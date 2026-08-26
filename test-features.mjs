@@ -347,7 +347,52 @@ async function tally({ reply, reduced = false }) {
     `tally: reduced motion should set the final number outright — got "${el.textContent}"`);
 }
 
+/* ─────────── footer build stamp ─────────── */
+{
+  check(!/\{\{BUILT_/.test(html), "stamp: a BUILT_ placeholder was not substituted");
+
+  const { d } = boot();
+  const built = d.querySelector(".built");
+  check(built, "stamp: no .built line in the footer");
+  check(built && built.closest("footer"), "stamp: build stamp is not in the footer");
+
+  const time = built && built.querySelector("time");
+  check(time, "stamp: the date is not in a <time> element");
+  const iso = time && time.getAttribute("datetime");
+  check(iso && /^\d{4}-\d{2}-\d{2}$/.test(iso), `stamp: datetime is not ISO — got "${iso}"`);
+  check(time && time.textContent.trim().length > 0, "stamp: <time> has no readable text");
+
+  // the date must be baked in, not computed in the browser: a reader wants to
+  // know when the page was published, not what today happens to be
+  const scriptSetsIt = /getElementById\("?built"?\)|\.built[^{]*textContent/.test(code);
+  check(!scriptSetsIt, "stamp: the date is written by script — it must be baked in at build time");
+
+  // it must not be in the future, and must be a real date
+  if (iso && /^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+    const when = new Date(iso + "T00:00:00Z");
+    check(!isNaN(when), `stamp: unparseable date "${iso}"`);
+    check(when.getTime() <= Date.now() + 864e5, `stamp: build date is in the future — ${iso}`);
+    check(when.getFullYear() >= 2026, `stamp: build date looks stale — ${iso}`);
+  }
+
+  // the sitemap should agree with the page, or search engines get a different story
+  const sm = fs.readFileSync(here("./docs/sitemap.xml"), "utf8");
+  const lastmod = (sm.match(/<lastmod>([^<]+)<\/lastmod>/) || [])[1];
+  check(lastmod === iso, `stamp: sitemap lastmod ${lastmod} disagrees with the page ${iso}`);
+
+  // the revision, when present, has to point somewhere real and not be an empty link
+  const rev = built && built.querySelector("a.rev");
+  if (rev) {
+    check(rev.textContent.trim().length >= 7, "stamp: revision link has no text");
+    check(/^https:\/\/github\.com\//.test(rev.getAttribute("href")),
+      "stamp: revision does not link to GitHub");
+    check(!/>\s*<\/a>/.test(built.innerHTML), "stamp: empty revision anchor rendered");
+  }
+  check(!/&middot;\s*$/.test(built.textContent.trim()),
+    "stamp: trailing separator with nothing after it");
+}
+
 console.log(fail.length
   ? "FAIL\n - " + fail.join("\n - ")
-  : `theme / jsonld / fonts / 404 / contact / tally clean (${checks} checks)`);
+  : `theme / jsonld / fonts / 404 / contact / tally / stamp clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);
