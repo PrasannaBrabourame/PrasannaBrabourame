@@ -11,15 +11,23 @@
   <img src="https://komarev.com/ghpvc/?username=PrasannaBrabourame&style=for-the-badge&color=2AA5A0&label=VISITORS"/>
 </p>
 
+<p align="center">
+  <a href="https://prasannabrabourame.github.io/PrasannaBrabourame/"><img src="https://img.shields.io/badge/PORTFOLIO-prasannabrabourame.github.io-E8A33D?style=for-the-badge&labelColor=16324F"/></a>
+  <a href="https://calendly.com/prasannabrabourame/15min"><img src="https://img.shields.io/badge/BOOK-15_MIN_CONSULT-2AA5A0?style=for-the-badge&labelColor=16324F"/></a>
+</p>
+
 <br/>
 
 ## `$ whoami`
 
 ```yaml
 name: Prasanna Brabourame
-role: Forward Deployed AI Specialist @ NCS AI Central
-mission: "The gap between an AI demo and a production system is where I work."
+role: AI Implementation Strategist @ NCS AI Central
+also: Forward Deployed AI Specialist · Tech Lead · Cloud Architect
+mission: "I work in the gap between an AI demo and a system people can rely on."
 years_in_tech: 10+
+based_in: Singapore
+portfolio: https://prasannabrabourame.github.io/PrasannaBrabourame/
 currently:
   - Embedded in Singapore Government GenAI & agentic AI programmes (Gov+ · Whole-of-Government)
   - Partnering with GovTech, Google and the National AI Group
@@ -28,6 +36,8 @@ how_i_work:
   embed: "inside the client's walls — their use cases, constraints and data rules"
   build: "the whole system myself — front end, AI pipeline, security, infra"
   harden: "for the day after go-live — retries, watchdogs, audits, backstops"
+education: B.Tech Electronics & Communications — Pondicherry University (2012-16)
+credentials: 45 certificates · 1 patent application · 15 verified Credly badges
 speaks: [English, Tamil, TypeScript, Python, Go]
 fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw it"
 ```
@@ -36,7 +46,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 
 ## 🛰️ Flagship AI Deployments
 
-> Production systems in domains where mistakes are expensive. Code is client-owned & private — war stories available over ☕.
+> Real systems doing real work, in jobs where a wrong answer costs money. The code belongs to the clients and stays private, so I can talk about how it was built but not show it. Happy to tell the stories over ☕.
 
 <table>
   <tr>
@@ -46,7 +56,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/GOVTECH_·_CERTIFICATION-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DEPLOYED-2AA5A0?style=flat-square"/>
       </p>
-      <p>AI document review for Singapore's [withheld] certification authority — classifies <b>25 document types</b>, validates them against the full certification rule set, and never lets the LLM make a safety-critical call alone.</p>
+      <p>AI that reads the documents behind a certification application. It works out which of <b>25 kinds of document</b> each file is, checks it against the full rule book, and never lets the AI make a safety-critical call on its own.</p>
       <p><code>React</code> <code>Firebase</code> <code>AISay</code> <code>Gemini</code></p>
     </td>
     <td width="50%" valign="top">
@@ -55,7 +65,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/REGTECH_·_AML%2FCFT-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
       </p>
-      <p>Automates compliance review of regulated firms against <b>~40 [withheld] rules</b> — severity is always stamped from the rule book, never inferred by the model. Findings a regulator can defend.</p>
+      <p>Checks regulated companies against roughly <b>40 rules</b> without an officer reading everything by hand. How serious a problem is always comes from the rule book, never from the AI's opinion.</p>
       <p><code>React</code> <code>Python</code> <code>Firestore</code> <code>Gemini</code></p>
     </td>
   </tr>
@@ -66,7 +76,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/DEVSECOPS-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
       </p>
-      <p>From vulnerability to tested merge request, automatically — a <b>12-stage remediation pipeline</b> with <b>4 interchangeable LLM providers</b>. Fixes ship only when the tests pass.</p>
+      <p>Takes a security weakness all the way to a tested, ready-to-review fix on its own. Twelve steps, and four AI providers you can swap between. A fix is only ever submitted if the tests pass.</p>
       <p><code>Node.js</code> <code>PostgreSQL</code> <code>Claude</code> <code>GPT</code> <code>Gemini</code> <code>Ollama</code></p>
     </td>
     <td width="50%" valign="top">
@@ -75,7 +85,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/EDTECH-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
       </p>
-      <p>Turns teacher tracking data into per-child learning insights — a Pub/Sub-driven agent pipeline (<b>retrieval → summarise → evaluate</b>) with end-to-end correlation tracing.</p>
+      <p>Turns the notes teachers keep into a clear picture of how each child is getting on. The AI looks things up, sums them up, then checks its own work. Every step can be traced, and it tries four different ways to match a child's name before giving up.</p>
       <p><code>Go</code> <code>Next.js</code> <code>Vertex AI Agent Engine</code></p>
     </td>
   </tr>
@@ -85,25 +95,25 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 
 ## 🗄️ Complete Mission Archive
 
-> Every deployment, 2016 → now. Expand an era to read the case files.
+> Everything I have shipped since 2016. Click an era open to read about it.
 
 <details>
 <summary><b>🏢 NCS Group — Singapore Government platforms · 2023 → now</b></summary>
 <br/>
 
-**ShiftRing AI** — AI-driven voice + chat customer support: natural-language understanding, multilingual responses, automated ticket creation.
+**ShiftRing AI** — Phone and chat customer support run by AI. It understands ordinary speech, replies in several languages, and raises support tickets on its own.
 `AI` `NLU` `Voice` `Chat Automation`
 
-**FWMOMCare** — National migrant-worker health-monitoring app. Led the re-platform from a .NET monolith to Node.js/NestJS microservices, migrating MSSQL → PostgreSQL along the way.
+**FWMOMCare** — The national health-monitoring app for migrant workers. I led the rebuild, splitting one large program into a set of smaller connected ones and moving it onto a different database.
 `Node.js` `NestJS` `PostgreSQL` `Microservices`
 
-**Exit Pass** — Manages exit permissions and location quotas for migrant-worker dormitory residents; integrated with SafeEntry and SGWorkPass.
+**Exit Pass** — Handled permission to leave, and limits on how many people could be in one place, for migrant workers living in dormitories. Connected to SafeEntry and SGWorkPass.
 `GovTech` `National Integrations`
 
-**MW Data Hub** — Data platform tracking Access Code status for migrant workers, supporting COVID-19 containment policy.
+**MW Data Hub** — Kept track of migrant workers' health-pass status, supporting COVID-19 policy.
 `Data Platform` `GovTech`
 
-**Safe at Work** — Portal for employers to verify the Access Code status of Work Permit, S Pass, and Employment Pass holders.
+**Safe at Work** — Let employers check the permit status of their staff.
 `GovTech` `Employer Services`
 
 </details>
@@ -112,10 +122,10 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>🚀 2359 Media — Team Lead (R&D) & Principal Engineer · 2022 → 2023</b></summary>
 <br/>
 
-**NUS IASS** *(National University of Singapore)* — Platform connecting students to paid gig work that counts toward internship credit, giving businesses wider talent access. Shipped across web, iOS, and Android.
+**NUS IASS** *(National University of Singapore)* — Connected students to paid short-term work that counted towards their internship credit, and gave businesses a checked pool of people to hire from. On web, iPhone and Android.
 `Node.js` `React` `Strapi` `PostgreSQL` `Payment Gateway`
 
-**PCF Operational Relief-Staff App** *(PAP Community Foundation)* — End-to-end relief-staff assignments, from job creation through payroll, spanning a CMS application and mobile app.
+**PCF Relief-Staff App** *(PAP Community Foundation)* — Handled cover staff from start to finish: posting the job, filling it, and paying the person. A web tool plus mobile apps.
 `Node.js` `React` `AWS` `PostgreSQL`
 
 </details>
@@ -124,22 +134,22 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>🧪 Logical Steps — Senior Product Engineer · 2019 → 2022</b></summary>
 <br/>
 
-**Ola Search Platform Suite** *(technical lead, 12-person team)* — Conversational AI search: an NLP search engine on Apache Solr, a context-aware query engine, an intent engine matching queries to answers, the OlaBot chatbot (voice + text, rich-media responses, guided transactions), OlaNLP grammar/style correction, and an admin console for relevancy tuning.
+**Ola Search Platform Suite** *(technical lead, 12-person team)* — Search you could talk to. A search engine that understood ordinary questions. A part that worked out what someone actually meant. A chatbot for voice and text, with pictures and step-by-step help. A grammar and style checker. And a console for tuning how results were ranked.
 `Python` `Node.js` `React` `Solr` `Elasticsearch` `Docker` `Kubernetes` `TensorFlow`
 
-**LNDDO** — Fintech platform assessing SME creditworthiness from digital-footprint data to offer short-term business credit lines (UAE market). Architecture & framework design team.
+**LNDDO** — Judged whether small businesses were creditworthy from their online activity, so they could be offered short-term credit. Built for the UAE market. I was on the team that designed how it all fitted together.
 `Node.js` `React` `MongoDB` `Azure` `Redis`
 
-**CardsPe (Zupcash)** — Offline-to-online commerce: merchants launch online stores shareable through chat apps. Built from scratch — APIs, auth/storage microservices, orchestration middleware, data modelling.
+**CardsPe (Zupcash)** — Got shop owners selling online, with stores they could share through chat apps. Built from nothing: the interfaces other systems talk to, the sign-in and file storage, the part that coordinates everything, and the way the data was organised.
 `Node.js` `Next.js` `MongoDB` `AWS` `Redis` `Elasticsearch`
 
-**VISSION** — Web-scraping platform: message queues between microservices, LDAP sign-in module, Express API proxy.
+**VISSION** — Collected information from websites automatically. The parts passed messages to each other through queues, with company sign-in and a shared entry point for the interfaces.
 `Python` `Flask` `Scrapy` `Puppeteer` `AWS Lambda`
 
-**LS MQTT** — Publisher-subscriber messaging on HiveMQ MQTT with a dynamic channel-management UI and an embedded-microcontroller proof of concept.
+**LS MQTT** — Messaging where senders publish and interested parties subscribe, with a screen for managing channels on the fly and a working proof of concept on a small embedded chip.
 `Node.js` `Next.js` `MQTT` `HiveMQ` `IoT`
 
-**Power App** — Blockchain dashboard integrating Ethereum smart contracts via Web3: live transaction history, chain state, and exchange data feeds.
+**Power App** — A dashboard for blockchain activity, wired into Ethereum contracts: live transaction history, the state of the chain, and exchange price feeds.
 `Solidity` `Ethereum` `Web3` `NFT` `Truffle`
 
 </details>
@@ -148,19 +158,19 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>📚 Integra Software Services — Senior Programmer, Innovation & R&D · 2016 → 2019</b></summary>
 <br/>
 
-**iNLP** *(18-person team)* — NLP engine for publishing: cognitive rule engine, custom spaCy NER models, FastText language detection routing to Hugging Face neural machine translation, MinHash/LSH de-duplication at scale, LSTM/CNN deep learning, and transfer learning with BERT, GPT-2, and T5; Rasa-based chatbot.
+**iNLP** *(18-person team)* — A language-AI engine for publishing. It picked out names and terms from text, worked out which language something was in and sent it to be translated, and stripped out duplicates across huge volumes. Built on deep learning, and on adapting existing AI models to new tasks. Plus a chatbot.
 `Python` `spaCy` `NLTK` `TensorFlow` `Hugging Face` `Rasa`
 
-**iAuthor / iCorrectProof** — Online author-proofing editor for Adobe InDesign content, designed from scratch as Scrum Master/SPOC: real-time grammar checking over sockets, an Electron desktop app plus PWA, automated multi-format document delivery, and blockchain-based peer review with Stripe/PayPal.
+**iAuthor / iCorrectProof** — An online editor for authors checking their own proofs, designed from scratch while I also ran the team. It checked grammar as you typed. It came as both a desktop app and a web app. It produced finished documents in several formats on its own. And peer review was recorded on a blockchain, with card and PayPal payments.
 `React` `Redux` `Electron` `Express` `Azure` `WebSockets`
 
-**Project X (R&D)** — InDesign-replacement rendering engine: in-browser PDF-as-HTML rendering via HTML Canvas. The work led to a **patent application**.
+**Project X (R&D)** — A page-layout engine meant to replace InDesign, drawing PDF pages as web pages in the browser. The research led to a **patent application**.
 `Node.js` `Canvas` `PDF.js` `Font Rendering`
 
-**WK Digital Book Platform** — Digital book platform with in-browser PDF rendering, a cron-based file-import engine, and localisation.
+**WK Digital Book Platform** — A digital book platform that rendered PDFs in the browser, imported files on a schedule, and worked in more than one language.
 `ASP.NET Web API` `MS SQL` `Angular`
 
-**iRights & Pearson platforms** — iRights: rights/permissions management for photo research (budgets, licensing scope, legal risk). Pearson Image Atlas (WCAG 2.0 AA accessible) and Video Collection (MyLab SSO).
+**iRights & Pearson platforms** — iRights managed rights and permissions for photo research, covering budgets, what a licence allowed, and legal risk. Also the Pearson Image Atlas, built to meet accessibility standards, and their Video Collection with single sign-on.
 `.NET` `Angular` `Accessibility`
 
 </details>
@@ -169,7 +179,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>🌍 Open Source & Side Quests</b></summary>
 <br/>
 
-**COVID-19 Dashboards** — Built the Tamil Nadu COVID-19 dashboard and a real-time SAARC impact visualisation; contributed district-level GeoJSON to the Covid India project.
+**COVID-19 Dashboards** — Built the Tamil Nadu COVID-19 dashboard and a live view of the impact across South Asia. Also contributed district-level map data to the Covid India project.
 `React` `D3` `GeoJSON`
 
 **npm Packages** — 13 published open-source packages on [npm](https://www.npmjs.com/~prasannabrabourame).
@@ -189,26 +199,118 @@ timeline
     2022-23 : Eng. Team Lead (R&D) — 2359 Media : NUS & PCF platforms
     2023-24 : Tech Lead — NCS : FWMOMCare .NET → Node microservices
     2024-26 : Senior Consultant — NCS Gov+ : Cloud architecture · ShiftRing AI
-    2026 : Forward Deployed AI Specialist — NCS AI Central : 4 AI platforms shipped
+    2026 : AI Implementation Strategist — NCS AI Central : Forward deployed · 4 AI platforms shipped
 ```
 
 <br/>
 
 ## 🧰 Technical Arsenal
 
-**🤖 AI / LLM**
+**🧠 Models & LLM providers**
 
 <p>
   <img src="https://img.shields.io/badge/Anthropic_Claude-16324F?style=for-the-badge&logo=anthropic&logoColor=white"/>
   <img src="https://img.shields.io/badge/Google_Gemini-16324F?style=for-the-badge&logo=googlegemini&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI-16324F?style=for-the-badge&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI-16324F?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Ollama-16324F?style=for-the-badge&logo=ollama&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vertex_AI-16324F?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon_Bedrock-16324F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Azure_OpenAI-16324F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Llama-16324F?style=for-the-badge&logo=meta&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Mistral-16324F?style=for-the-badge&logo=mistralai&logoColor=white"/>
+</p>
+
+**🕸️ Agent frameworks & orchestration**
+
+<p>
+  <img src="https://img.shields.io/badge/Google_ADK-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/Vertex_AI_Agent_Engine-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangChain-2AA5A0?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangGraph-2AA5A0?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CrewAI-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Langflow-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LlamaIndex-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agent_Skills-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Claude_Code-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
+</p>
+
+**📈 Evaluation & observability**
+
+> An AI change you cannot measure is a rumour.
+
+<p>
+  <img src="https://img.shields.io/badge/DeepEval-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Ragas-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Promptfoo-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/LangSmith-E8A33D?style=for-the-badge&logo=langchain&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/TruLens-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Arize_Phoenix-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/W&B_Weave-E8A33D?style=for-the-badge&logo=weightsandbiases&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Agent_Trajectory_Eval-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/LLM--as--Judge-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Golden_Datasets-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Regression_Suites-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/OpenTelemetry-E8A33D?style=for-the-badge&logo=opentelemetry&logoColor=16324F"/>
+</p>
+
+**⚡ Optimisation — cost, latency, context**
+
+> The bill and the latency are design outputs, not accidents.
+
+<p>
+  <img src="https://img.shields.io/badge/Caveman_Prompting-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Context_Headroom-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LLM_Wiki-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prompt_Caching-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Semantic_Caching-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Model_Routing_&_Cascades-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Context_Compression-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rolling_Summarisation-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Reranking-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/KV--Cache_Reuse-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Batching-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Structured_Outputs-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Distillation-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Quantisation-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Token_&_Cost_Budgets-16324F?style=for-the-badge&logoColor=white"/>
+</p>
+
+**🔍 Retrieval**
+
+<p>
   <img src="https://img.shields.io/badge/RAG-2AA5A0?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hugging_Face-2AA5A0?style=for-the-badge&logo=huggingface&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Claude_Code-E8A33D?style=for-the-badge&logo=anthropic&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Agentic_Pipelines-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Vertex_AI_Search-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pgvector-2AA5A0?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pinecone-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Hybrid_Search-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Chunking_Strategies-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Provenance_per_Chunk-2AA5A0?style=for-the-badge&logoColor=white"/>
+</p>
+
+**🔬 ML & NLP foundations**
+
+<p>
+  <img src="https://img.shields.io/badge/Hugging_Face-16324F?style=for-the-badge&logo=huggingface&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch-16324F?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-16324F?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/spaCy-16324F?style=for-the-badge&logo=spacy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rasa-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/BERT_·_GPT--2_·_T5-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Solr-16324F?style=for-the-badge&logo=apachesolr&logoColor=white"/>
+</p>
+
+**🛡️ The part that keeps it running**
+
+<p>
+  <img src="https://img.shields.io/badge/Agentic_Pipelines-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Deterministic_Backstops-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rules_Engines-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Guardrails_&_Allow--lists-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prompt_Injection_Defence-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PII_Redaction-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Audit_Trails-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Human--in--the--Loop-2AA5A0?style=for-the-badge&logoColor=white"/>
 </p>
 
 **⚙️ Languages & Backend**
@@ -231,26 +333,82 @@ timeline
 
 <br/>
 
-## 📊 Telemetry
+## 🎖️ Certification & Continuous Learning
+
+> The tools change every few months, so keeping up is part of the job. None of it
+> replaces having actually delivered something.
 
 <table>
   <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=prasannabrabourame&count_private=true&hide_border=true&show_icons=true&hide_title=true&theme=react&bg_color=0D1117&title_color=2AA5A0&icon_color=E8A33D" alt="GitHub Stats"/></td>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasannabrabourame&layout=compact&hide=php&hide_border=true&theme=react&bg_color=0D1117&title_color=2AA5A0" alt="Top Languages"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Streak"/></td>
-    <td><img src="https://github-profile-trophy.vercel.app/?username=prasannabrabourame&theme=discord&no-frame=true&no-bg=true&column=3&margin-w=8" alt="Trophies"/></td>
+    <td width="33%" valign="top">
+      <b>☁️ Google Cloud</b><br/>
+      <img src="https://img.shields.io/badge/Diamond_League-13,895_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
+      <b>38 skill badges in 2026</b> — Vertex AI Search &amp; data stores, Gemini Enterprise,
+      the Agent Development Kit, agent memory, tools &amp; guardrails, MLOps for
+      generative AI, cloud foundations.<br/><br/>
+      <a href="https://www.skills.google/public_profiles/b37f16ea-e52a-411c-a350-d7e9fb01360e">Public profile →</a>
+    </td>
+    <td width="33%" valign="top">
+      <b>🤖 Anthropic</b><br/>
+      <img src="https://img.shields.io/badge/Earned-Mar_–_Jun_2026-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      Claude Platform 101 · Claude Code 101 and Claude Code in Action ·
+      Building with the Claude API · Model Context Protocol, including
+      Advanced Topics · Agent Skills · AI Fluency · Claude with Vertex AI ·
+      Claude Cowork.
+    </td>
+    <td width="33%" valign="top">
+      <b>🏅 Verified badges</b><br/>
+      <img src="https://img.shields.io/badge/Credly-15_badges_since_2019-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      Google Cloud, AWS and IBM. Elsewhere: Microsoft Applied Skills for AI
+      research agents, NUS-ISS ICT Assessment for Software Developer, AWS Cloud
+      Practitioner Essentials, Machine Learning (Stanford), IBM Certified Data
+      Architect – Big Data.<br/><br/>
+      <a href="https://www.credly.com/users/prasanna-brabourame/badges">Verify on Credly →</a>
+    </td>
   </tr>
 </table>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=prasannabrabourame&bg_color=0D1117&color=2AA5A0&line=E8A33D&point=ffffff&hide_border=true&area=true" alt="Activity Graph"/>
+<p align="center"><i>Forty-five certificates and one patent application. The patent took longer.</i></p>
+
+<br/>
+
+## 📊 Telemetry
+
+<p>
+  <img src="https://img.shields.io/github/followers/PrasannaBrabourame?style=for-the-badge&logo=github&labelColor=16324F&color=2AA5A0"/>
+  <img src="https://img.shields.io/github/stars/PrasannaBrabourame?style=for-the-badge&logo=github&labelColor=16324F&color=2AA5A0"/>
+  <img src="https://img.shields.io/github/last-commit/PrasannaBrabourame/PrasannaBrabourame?style=for-the-badge&logo=git&labelColor=16324F&color=E8A33D"/>
+</p>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prasannabrabourame&theme=github_dark" alt="Profile summary — contributions, repos and activity"/>
+
+<table>
+  <tr>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=prasannabrabourame&theme=github_dark" alt="Commits, PRs, issues and stars"/></td>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=prasannabrabourame&theme=github_dark" alt="Top languages by repository"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=prasannabrabourame&theme=github_dark" alt="Top languages by commit"/></td>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=prasannabrabourame&theme=github_dark&utcOffset=8" alt="Productive time, UTC+8"/></td>
+  </tr>
+</table>
+
+<img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Contribution streak"/>
+
+<!-- Every image above was checked 3x for a 200 before being used.
+     Retired, and why — do not re-add without re-testing:
+       github-readme-stats.vercel.app        503, all attempts (stats + top-langs cards)
+       github-profile-trophy.vercel.app      402 Payment Required
+       github-readme-activity-graph.vercel.app  402 Payment Required
+       github-contributor-stats.vercel.app   402 Payment Required
+       ghchart.rshah.org                     200, but paints empty days #EEEEEE,
+                                             which reads as a pale slab on a dark README -->
 
 <br/>
 
 ## ✍️ Latest Field Notes
 
-📝 I write about AI engineering, Docker, and production war stories on [Medium](https://medium.com/@prasannabrabourame) · 🏅 Verified badges on [Credly](https://www.credly.com/users/prasanna-brabourame)
+📝 I write about building AI, Docker, and what goes wrong in real systems on [Medium](https://medium.com/@prasannabrabourame) · 🏅 Verified badges on [Credly](https://www.credly.com/users/prasanna-brabourame)
 
 <table>
   <tr>
