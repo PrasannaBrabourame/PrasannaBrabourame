@@ -11,15 +11,23 @@
   <img src="https://komarev.com/ghpvc/?username=PrasannaBrabourame&style=for-the-badge&color=2AA5A0&label=VISITORS"/>
 </p>
 
+<p align="center">
+  <a href="https://prasannabrabourame.github.io/PrasannaBrabourame/"><img src="https://img.shields.io/badge/PORTFOLIO-prasannabrabourame.github.io-E8A33D?style=for-the-badge&labelColor=16324F"/></a>
+  <a href="https://calendly.com/prasannabrabourame/15min"><img src="https://img.shields.io/badge/BOOK-15_MIN_CONSULT-2AA5A0?style=for-the-badge&labelColor=16324F"/></a>
+</p>
+
 <br/>
 
 ## `$ whoami`
 
 ```yaml
 name: Prasanna Brabourame
-role: Forward Deployed AI Specialist @ NCS AI Central
+role: AI Implementation Strategist @ NCS AI Central
+also: Forward Deployed AI Specialist · Tech Lead · Cloud Architect
 mission: "The gap between an AI demo and a production system is where I work."
 years_in_tech: 10+
+based_in: Singapore
+portfolio: https://prasannabrabourame.github.io/PrasannaBrabourame/
 currently:
   - Embedded in Singapore Government GenAI & agentic AI programmes (Gov+ · Whole-of-Government)
   - Partnering with GovTech, Google and the National AI Group
@@ -28,6 +36,8 @@ how_i_work:
   embed: "inside the client's walls — their use cases, constraints and data rules"
   build: "the whole system myself — front end, AI pipeline, security, infra"
   harden: "for the day after go-live — retries, watchdogs, audits, backstops"
+education: B.Tech Electronics & Communications — Pondicherry University (2012-16)
+credentials: 45 certificates · 1 patent application · 15 verified Credly badges
 speaks: [English, Tamil, TypeScript, Python, Go]
 fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw it"
 ```
@@ -189,26 +199,78 @@ timeline
     2022-23 : Eng. Team Lead (R&D) — 2359 Media : NUS & PCF platforms
     2023-24 : Tech Lead — NCS : FWMOMCare .NET → Node microservices
     2024-26 : Senior Consultant — NCS Gov+ : Cloud architecture · ShiftRing AI
-    2026 : Forward Deployed AI Specialist — NCS AI Central : 4 AI platforms shipped
+    2026 : AI Implementation Strategist — NCS AI Central : Forward deployed · 4 AI platforms shipped
 ```
 
 <br/>
 
 ## 🧰 Technical Arsenal
 
-**🤖 AI / LLM**
+**🧠 Models & LLM providers**
 
 <p>
   <img src="https://img.shields.io/badge/Anthropic_Claude-16324F?style=for-the-badge&logo=anthropic&logoColor=white"/>
   <img src="https://img.shields.io/badge/Google_Gemini-16324F?style=for-the-badge&logo=googlegemini&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI-16324F?style=for-the-badge&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI-16324F?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Ollama-16324F?style=for-the-badge&logo=ollama&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vertex_AI-16324F?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon_Bedrock-16324F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Azure_OpenAI-16324F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Llama-16324F?style=for-the-badge&logo=meta&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Mistral-16324F?style=for-the-badge&logo=mistralai&logoColor=white"/>
+</p>
+
+**🕸️ Agent frameworks & orchestration**
+
+<p>
+  <img src="https://img.shields.io/badge/Google_ADK-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/Vertex_AI_Agent_Engine-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/RAG-2AA5A0?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hugging_Face-2AA5A0?style=for-the-badge&logo=huggingface&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Claude_Code-E8A33D?style=for-the-badge&logo=anthropic&logoColor=16324F"/>
-  <img src="https://img.shields.io/badge/Agentic_Pipelines-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangChain-2AA5A0?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangGraph-2AA5A0?style=for-the-badge&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CrewAI-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Langflow-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LlamaIndex-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agent_Skills-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Claude_Code-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
+</p>
+
+**📈 Evaluation, observability & retrieval**
+
+<p>
+  <img src="https://img.shields.io/badge/LangSmith-E8A33D?style=for-the-badge&logo=langchain&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Weights_&_Biases-E8A33D?style=for-the-badge&logo=weightsandbiases&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/RAG-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Vertex_AI_Search-E8A33D?style=for-the-badge&logo=googlecloud&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/pgvector-E8A33D?style=for-the-badge&logo=postgresql&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Pinecone-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Eval_Harnesses-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Token_&_Cost_Budgets-E8A33D?style=for-the-badge&logoColor=16324F"/>
+</p>
+
+**🔬 ML & NLP foundations**
+
+<p>
+  <img src="https://img.shields.io/badge/Hugging_Face-16324F?style=for-the-badge&logo=huggingface&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch-16324F?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-16324F?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/spaCy-16324F?style=for-the-badge&logo=spacy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rasa-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/BERT_·_GPT--2_·_T5-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Solr-16324F?style=for-the-badge&logo=apachesolr&logoColor=white"/>
+</p>
+
+**🛡️ The part that keeps it running**
+
+<p>
+  <img src="https://img.shields.io/badge/Agentic_Pipelines-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Deterministic_Backstops-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Rules_Engines-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Guardrails_&_Allow--lists-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prompt_Injection_Defence-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PII_Redaction-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Audit_Trails-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Human--in--the--Loop-2AA5A0?style=for-the-badge&logoColor=white"/>
 </p>
 
 **⚙️ Languages & Backend**
@@ -231,6 +293,45 @@ timeline
 
 <br/>
 
+## 🎖️ Certification & Continuous Learning
+
+> The tools change every quarter. Staying fluent is part of the job — none of it
+> substitutes for having shipped something.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <b>☁️ Google Cloud</b><br/>
+      <img src="https://img.shields.io/badge/Diamond_League-13,895_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
+      <b>38 skill badges in 2026</b> — Vertex AI Search &amp; data stores, Gemini Enterprise,
+      the Agent Development Kit, agent memory, tools &amp; guardrails, MLOps for
+      generative AI, cloud foundations.<br/><br/>
+      <a href="https://www.skills.google/public_profiles/b37f16ea-e52a-411c-a350-d7e9fb01360e">Public profile →</a>
+    </td>
+    <td width="33%" valign="top">
+      <b>🤖 Anthropic</b><br/>
+      <img src="https://img.shields.io/badge/Earned-Mar_–_Jun_2026-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      Claude Platform 101 · Claude Code 101 and Claude Code in Action ·
+      Building with the Claude API · Model Context Protocol, including
+      Advanced Topics · Agent Skills · AI Fluency · Claude with Vertex AI ·
+      Claude Cowork.
+    </td>
+    <td width="33%" valign="top">
+      <b>🏅 Verified badges</b><br/>
+      <img src="https://img.shields.io/badge/Credly-15_badges_since_2019-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      Google Cloud, AWS and IBM. Elsewhere: Microsoft Applied Skills for AI
+      research agents, NUS-ISS ICT Assessment for Software Developer, AWS Cloud
+      Practitioner Essentials, Machine Learning (Stanford), IBM Certified Data
+      Architect – Big Data.<br/><br/>
+      <a href="https://www.credly.com/users/prasanna-brabourame/badges">Verify on Credly →</a>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><i>Forty-five certificates and one patent application. The patent took longer.</i></p>
+
+<br/>
+
 ## 📊 Telemetry
 
 <table>
@@ -239,12 +340,13 @@ timeline
     <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasannabrabourame&layout=compact&hide=php&hide_border=true&theme=react&bg_color=0D1117&title_color=2AA5A0" alt="Top Languages"/></td>
   </tr>
   <tr>
-    <td><img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Streak"/></td>
-    <td><img src="https://github-profile-trophy.vercel.app/?username=prasannabrabourame&theme=discord&no-frame=true&no-bg=true&column=3&margin-w=8" alt="Trophies"/></td>
+    <td colspan="2"><img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Streak"/></td>
   </tr>
 </table>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=prasannabrabourame&bg_color=0D1117&color=2AA5A0&line=E8A33D&point=ffffff&hide_border=true&area=true" alt="Activity Graph"/>
+<!-- Removed: github-profile-trophy and github-readme-activity-graph. Both Vercel
+     deployments now return 402 Payment Required, so they rendered as broken
+     images. Re-add only if the upstream projects come back. -->
 
 <br/>
 
