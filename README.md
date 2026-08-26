@@ -334,19 +334,35 @@ timeline
 
 ## 📊 Telemetry
 
+<p>
+  <img src="https://img.shields.io/github/followers/PrasannaBrabourame?style=for-the-badge&logo=github&labelColor=16324F&color=2AA5A0"/>
+  <img src="https://img.shields.io/github/stars/PrasannaBrabourame?style=for-the-badge&logo=github&labelColor=16324F&color=2AA5A0"/>
+  <img src="https://img.shields.io/github/last-commit/PrasannaBrabourame/PrasannaBrabourame?style=for-the-badge&logo=git&labelColor=16324F&color=E8A33D"/>
+</p>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prasannabrabourame&theme=github_dark" alt="Profile summary — contributions, repos and activity"/>
+
 <table>
   <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=prasannabrabourame&count_private=true&hide_border=true&show_icons=true&hide_title=true&theme=react&bg_color=0D1117&title_color=2AA5A0&icon_color=E8A33D" alt="GitHub Stats"/></td>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasannabrabourame&layout=compact&hide=php&hide_border=true&theme=react&bg_color=0D1117&title_color=2AA5A0" alt="Top Languages"/></td>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=prasannabrabourame&theme=github_dark" alt="Commits, PRs, issues and stars"/></td>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=prasannabrabourame&theme=github_dark" alt="Top languages by repository"/></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Streak"/></td>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=prasannabrabourame&theme=github_dark" alt="Top languages by commit"/></td>
+    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=prasannabrabourame&theme=github_dark&utcOffset=8" alt="Productive time, UTC+8"/></td>
   </tr>
 </table>
 
-<!-- Removed: github-profile-trophy and github-readme-activity-graph. Both Vercel
-     deployments now return 402 Payment Required, so they rendered as broken
-     images. Re-add only if the upstream projects come back. -->
+<img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Contribution streak"/>
+
+<!-- Every image above was checked 3x for a 200 before being used.
+     Retired, and why — do not re-add without re-testing:
+       github-readme-stats.vercel.app        503, all attempts (stats + top-langs cards)
+       github-profile-trophy.vercel.app      402 Payment Required
+       github-readme-activity-graph.vercel.app  402 Payment Required
+       github-contributor-stats.vercel.app   402 Payment Required
+       ghchart.rshah.org                     200, but paints empty days #EEEEEE,
+                                             which reads as a pale slab on a dark README -->
 
 <br/>
 
