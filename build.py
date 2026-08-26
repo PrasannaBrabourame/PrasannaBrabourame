@@ -10,9 +10,52 @@ Writes:  docs/index.html  docs/404.html  docs/robots.txt  docs/sitemap.xml  docs
 Expects: docs/img/ and docs/og.jpg, written by diagrams/hero.py and diagrams/og.py
          docs/fonts/, written by fonts.py
 """
-import datetime, os, pathlib, re, sys
+import datetime, os, pathlib, re, subprocess, sys
 
 SITE_URL = os.environ.get("SITE_URL", "https://prasannabrabourame.github.io/PrasannaBrabourame").rstrip("/")
+
+HERE = pathlib.Path(__file__).parent
+REPO_URL = "https://github.com/PrasannaBrabourame/PrasannaBrabourame"
+
+
+def build_stamp():
+    """When this build happened, and which commit it came from.
+
+    The date is the build date rather than anything computed in the browser: a
+    visitor should see when the page was last published, not when they opened
+    it. The revision makes the deployed page traceable to a commit, which is the
+    whole point of showing a version at all.
+
+    Falls back to a date-only stamp outside a git checkout, and marks the
+    revision dirty when the tree has uncommitted changes — a page built from
+    unsaved edits should not claim to be a clean commit.
+    """
+    today = datetime.date.today()
+    stamp = {
+        "iso": today.isoformat(),
+        "human": "%d %s %d" % (today.day, today.strftime("%b"), today.year),
+        "rev": "",
+        "url": REPO_URL,
+    }
+
+    def git(*args):
+        return subprocess.run(("git",) + args, cwd=str(HERE), capture_output=True,
+                              text=True, timeout=10).stdout.strip()
+
+    try:
+        rev = git("rev-parse", "--short", "HEAD")
+        if not rev:
+            return stamp
+        # docs/ is this script's own output and is modified by the very act of
+        # building, so it can never count towards "dirty" — otherwise every
+        # build after the first would report a dirty tree forever. What matters
+        # is whether the *sources* are committed.
+        dirty = bool(git("status", "--porcelain", "--", ".", ":(exclude)docs"))
+        stamp["rev"] = rev + ("-dirty" if dirty else "")
+        stamp["url"] = REPO_URL + ("/commits/main" if dirty else "/commit/" + rev)
+    except (OSError, subprocess.SubprocessError):
+        pass                                    # no git, no revision, still a date
+    return stamp
 
 # Where the contact form POSTs. Unset, the form degrades to a mailto: draft,
 # which does nothing at all for a reader whose browser has no mail client.
@@ -32,7 +75,6 @@ if COUNTER_ENDPOINT and not COUNTER_ENDPOINT.startswith("https://"):
 if '"' in COUNTER_ENDPOINT or "\\" in COUNTER_ENDPOINT:
     sys.exit("COUNTER_ENDPOINT contains characters that would break out of the JS string")
 
-HERE = pathlib.Path(__file__).parent
 TPL = HERE / "template.html"
 DIA = HERE / "diagrams"
 OUT = HERE / "docs"
@@ -107,6 +149,15 @@ def main():
     html = html.replace("{{SITE_URL}}", SITE_URL)
     html = html.replace("{{CONTACT_ENDPOINT}}", CONTACT_ENDPOINT)
     html = html.replace("{{COUNTER_ENDPOINT}}", COUNTER_ENDPOINT)
+
+    stamp = build_stamp()
+    rev_html = ""
+    if stamp["rev"]:
+        rev_html = ('  &middot;  <a class="rev" href="%s" rel="noopener">%s</a>'
+                    % (stamp["url"], stamp["rev"]))
+    html = html.replace("{{BUILT_ISO}}", stamp["iso"])
+    html = html.replace("{{BUILT_HUMAN}}", stamp["human"])
+    html = html.replace("{{BUILT_REV_HTML}}", rev_html)
     left = re.findall(r"\{\{[A-Za-z0-9_:-]+\}\}", html)
     if left:
         sys.exit("unresolved placeholders: %s" % sorted(set(left)))
@@ -122,7 +173,7 @@ def main():
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         "  <url>\n    <loc>%s/</loc>\n    <lastmod>%s</lastmod>\n"
         "    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>\n"
-        "</urlset>\n" % (SITE_URL, datetime.date.today().isoformat()), encoding="utf-8")
+        "</urlset>\n" % (SITE_URL, stamp["iso"]), encoding="utf-8")
 
     # GitHub Pages runs Jekyll on a branch deploy unless this file exists.
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
@@ -149,6 +200,9 @@ def main():
     total = sum(f.stat().st_size for f in OUT.rglob("*") if f.is_file()) / 1024
     print("built docs/ — %d drawings, index.html %.0f KB, %.0f KB total" % (len(names), kb, total))
     print("canonical: %s" % SITE_URL)
+    print("stamped:   %s%s" % (stamp["human"], "  rev " + stamp["rev"] if stamp["rev"] else ""))
+    if stamp["rev"].endswith("-dirty"):
+        print("           ^ built from an uncommitted tree; commit before publishing")
     if CONTACT_ENDPOINT:
         print("contact:   %s" % CONTACT_ENDPOINT)
     else:

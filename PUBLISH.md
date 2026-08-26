@@ -251,3 +251,24 @@ Your profile repo then goes back to doing its one job.
 `docs/` was served from a `/PrasannaBrabourame/` subpath over HTTP and every asset
 returned 200. The build is byte-identical across runs. All 238 assertions pass.
 Pages gzips automatically: `index.html` is 353 KB on disk, **73 KB over the wire**.
+
+## The build stamp
+
+The footer ends with `Last updated <date> · <revision>`. Both come from
+`build.py` at build time — there is nothing to set and no environment variable.
+
+The date is baked in rather than computed in the browser on purpose: `new Date()`
+in the page would only ever say what today is, so a site untouched for two years
+would still claim to be current. `docs/sitemap.xml` takes its `<lastmod>` from
+the same stamp, and `test-features.mjs` fails the build if the two disagree.
+
+The revision is `git rev-parse --short HEAD`, linked to that commit. It gains a
+`-dirty` suffix when the **sources** are uncommitted, so a page built from
+unsaved edits cannot pass itself off as a clean commit. `docs/` is excluded from
+that check, because building modifies `docs/` by definition — counting it would
+mark every build after the first as dirty.
+
+Outside a git checkout the stamp degrades to a date with no revision link.
+
+So the publishing order matters: commit your source changes **first**, then
+rebuild, then commit `docs/`. Building first gives you a `-dirty` stamp.
