@@ -392,7 +392,56 @@ async function tally({ reply, reduced = false }) {
     "stamp: trailing separator with nothing after it");
 }
 
+/* ─────────── the page has to stay readable ─────────── */
+{
+  // Only real prose: <p>/<h1-3> blocks containing an actual sentence. Chip rows
+  // and tech-stack labels have no full stops and would skew the sentence length.
+  const body = html.slice(html.indexOf("<body>"), html.indexOf("<script>"))
+    .replace(/<svg[\s\S]*?<\/svg>/g, "")
+    .replace(/<!--[\s\S]*?-->/g, "");
+  const paras = [];
+  for (const m of body.matchAll(/<(p|h1|h2|h3)\b[^>]*>([\s\S]*?)<\/\1>/g)) {
+    const t = m[2].replace(/<[^>]+>/g, " ")
+      .replace(/&[a-z]+;|&#\d+;/g, " ").replace(/\s+/g, " ").trim();
+    if (t.split(" ").length >= 5 && /[.!?]/.test(t)) paras.push(t);
+  }
+  check(paras.length > 25, `readability: only found ${paras.length} prose blocks — extractor broken?`);
+
+  const syll = w => {
+    w = w.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/g, "");
+    if (!w) return 0;
+    let n = (w.match(/[aeiouy]+/g) || []).length;
+    if (w.endsWith("e") && n > 1) n -= 1;
+    return Math.max(1, n);
+  };
+
+  const text = paras.join(" ");
+  const words = text.match(/[A-Za-z][A-Za-z'-]*/g) || [];
+  const sents = paras.flatMap(p => p.split(/(?<=[.!?])\s+/).filter(x => x.split(" ").length > 1));
+  const W = words.length, S = sents.length;
+  const syl = words.reduce((a, w) => a + syll(w), 0);
+  const flesch = 206.835 - 1.015 * (W / S) - 84.6 * (syl / W);
+  const grade = 0.39 * (W / S) + 11.8 * (syl / W) - 15.59;
+  const hard = 100 * words.filter(w => syll(w) >= 4).length / W;
+
+  // The site was rewritten for a non-technical reader. These are floors, not
+  // targets: drifting back under them means the jargon has crept in again.
+  check(flesch >= 58,
+    `readability: Flesch reading ease fell to ${flesch.toFixed(1)} — needs to stay at 58+ (plain English is 60+)`);
+  check(grade <= 9.5,
+    `readability: reading level rose to grade ${grade.toFixed(1)} — needs to stay at or under 9.5`);
+  check(hard <= 4,
+    `readability: ${hard.toFixed(1)}% of words are 4+ syllables — needs to stay at or under 4%`);
+  check(W / S <= 18,
+    `readability: sentences average ${(W / S).toFixed(1)} words — needs to stay at or under 18`);
+
+  // no single sentence should be a monster
+  const longest = sents.reduce((a, b) => (b.split(" ").length > a.split(" ").length ? b : a), "");
+  check(longest.split(" ").length <= 46,
+    `readability: a ${longest.split(" ").length}-word sentence — "${longest.slice(0, 90)}…"`);
+}
+
 console.log(fail.length
   ? "FAIL\n - " + fail.join("\n - ")
-  : `theme / jsonld / fonts / 404 / contact / tally / stamp clean (${checks} checks)`);
+  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);
