@@ -24,7 +24,7 @@
 name: Prasanna Brabourame
 role: AI Implementation Strategist @ NCS AI Central
 also: Forward Deployed AI Specialist · Tech Lead · Cloud Architect
-mission: "The gap between an AI demo and a production system is where I work."
+mission: "I work in the gap between an AI demo and a system people can rely on."
 years_in_tech: 10+
 based_in: Singapore
 portfolio: https://prasannabrabourame.github.io/PrasannaBrabourame/
@@ -46,7 +46,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 
 ## 🛰️ Flagship AI Deployments
 
-> Production systems in domains where mistakes are expensive. Code is client-owned & private — war stories available over ☕.
+> Real systems doing real work, in jobs where a wrong answer costs money. The code belongs to the clients and stays private, so I can talk about how it was built but not show it. Happy to tell the stories over ☕.
 
 <table>
   <tr>
@@ -56,7 +56,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/GOVTECH_·_CERTIFICATION-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DEPLOYED-2AA5A0?style=flat-square"/>
       </p>
-      <p>AI document review for Singapore's [withheld] certification authority — classifies <b>25 document types</b>, validates them against the full certification rule set, and never lets the LLM make a safety-critical call alone.</p>
+      <p>AI that reads the documents behind a certification application. It works out which of <b>25 kinds of document</b> each file is, checks it against the full rule book, and never lets the AI make a safety-critical call on its own.</p>
       <p><code>React</code> <code>Firebase</code> <code>AISay</code> <code>Gemini</code></p>
     </td>
     <td width="50%" valign="top">
@@ -65,7 +65,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/REGTECH_·_AML%2FCFT-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
       </p>
-      <p>Automates compliance review of regulated firms against <b>~40 [withheld] rules</b> — severity is always stamped from the rule book, never inferred by the model. Findings a regulator can defend.</p>
+      <p>Checks regulated companies against roughly <b>40 rules</b> without an officer reading everything by hand. How serious a problem is always comes from the rule book, never from the AI's opinion.</p>
       <p><code>React</code> <code>Python</code> <code>Firestore</code> <code>Gemini</code></p>
     </td>
   </tr>
@@ -76,7 +76,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/DEVSECOPS-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
       </p>
-      <p>From vulnerability to tested merge request, automatically — a <b>12-stage remediation pipeline</b> with <b>4 interchangeable LLM providers</b>. Fixes ship only when the tests pass.</p>
+      <p>Takes a security weakness all the way to a tested, ready-to-review fix on its own. Twelve steps, and four AI providers you can swap between. A fix is only ever submitted if the tests pass.</p>
       <p><code>Node.js</code> <code>PostgreSQL</code> <code>Claude</code> <code>GPT</code> <code>Gemini</code> <code>Ollama</code></p>
     </td>
     <td width="50%" valign="top">
@@ -85,7 +85,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
         <img src="https://img.shields.io/badge/EDTECH-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
       </p>
-      <p>Turns teacher tracking data into per-child learning insights — a Pub/Sub-driven agent pipeline (<b>retrieval → summarise → evaluate</b>) with end-to-end correlation tracing.</p>
+      <p>Turns the notes teachers keep into a clear picture of how each child is getting on. The AI looks things up, sums them up, then checks its own work. Every step can be traced, and it tries four different ways to match a child's name before giving up.</p>
       <p><code>Go</code> <code>Next.js</code> <code>Vertex AI Agent Engine</code></p>
     </td>
   </tr>
@@ -95,25 +95,25 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 
 ## 🗄️ Complete Mission Archive
 
-> Every deployment, 2016 → now. Expand an era to read the case files.
+> Everything I have shipped since 2016. Click an era open to read about it.
 
 <details>
 <summary><b>🏢 NCS Group — Singapore Government platforms · 2023 → now</b></summary>
 <br/>
 
-**ShiftRing AI** — AI-driven voice + chat customer support: natural-language understanding, multilingual responses, automated ticket creation.
+**ShiftRing AI** — Phone and chat customer support run by AI. It understands ordinary speech, replies in several languages, and raises support tickets on its own.
 `AI` `NLU` `Voice` `Chat Automation`
 
-**FWMOMCare** — National migrant-worker health-monitoring app. Led the re-platform from a .NET monolith to Node.js/NestJS microservices, migrating MSSQL → PostgreSQL along the way.
+**FWMOMCare** — The national health-monitoring app for migrant workers. I led the rebuild, splitting one large program into a set of smaller connected ones and moving it onto a different database.
 `Node.js` `NestJS` `PostgreSQL` `Microservices`
 
-**Exit Pass** — Manages exit permissions and location quotas for migrant-worker dormitory residents; integrated with SafeEntry and SGWorkPass.
+**Exit Pass** — Handled permission to leave, and limits on how many people could be in one place, for migrant workers living in dormitories. Connected to SafeEntry and SGWorkPass.
 `GovTech` `National Integrations`
 
-**MW Data Hub** — Data platform tracking Access Code status for migrant workers, supporting COVID-19 containment policy.
+**MW Data Hub** — Kept track of migrant workers' health-pass status, supporting COVID-19 policy.
 `Data Platform` `GovTech`
 
-**Safe at Work** — Portal for employers to verify the Access Code status of Work Permit, S Pass, and Employment Pass holders.
+**Safe at Work** — Let employers check the permit status of their staff.
 `GovTech` `Employer Services`
 
 </details>
@@ -122,10 +122,10 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>🚀 2359 Media — Team Lead (R&D) & Principal Engineer · 2022 → 2023</b></summary>
 <br/>
 
-**NUS IASS** *(National University of Singapore)* — Platform connecting students to paid gig work that counts toward internship credit, giving businesses wider talent access. Shipped across web, iOS, and Android.
+**NUS IASS** *(National University of Singapore)* — Connected students to paid short-term work that counted towards their internship credit, and gave businesses a checked pool of people to hire from. On web, iPhone and Android.
 `Node.js` `React` `Strapi` `PostgreSQL` `Payment Gateway`
 
-**PCF Operational Relief-Staff App** *(PAP Community Foundation)* — End-to-end relief-staff assignments, from job creation through payroll, spanning a CMS application and mobile app.
+**PCF Relief-Staff App** *(PAP Community Foundation)* — Handled cover staff from start to finish: posting the job, filling it, and paying the person. A web tool plus mobile apps.
 `Node.js` `React` `AWS` `PostgreSQL`
 
 </details>
@@ -134,22 +134,22 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>🧪 Logical Steps — Senior Product Engineer · 2019 → 2022</b></summary>
 <br/>
 
-**Ola Search Platform Suite** *(technical lead, 12-person team)* — Conversational AI search: an NLP search engine on Apache Solr, a context-aware query engine, an intent engine matching queries to answers, the OlaBot chatbot (voice + text, rich-media responses, guided transactions), OlaNLP grammar/style correction, and an admin console for relevancy tuning.
+**Ola Search Platform Suite** *(technical lead, 12-person team)* — Search you could talk to. A search engine that understood ordinary questions. A part that worked out what someone actually meant. A chatbot for voice and text, with pictures and step-by-step help. A grammar and style checker. And a console for tuning how results were ranked.
 `Python` `Node.js` `React` `Solr` `Elasticsearch` `Docker` `Kubernetes` `TensorFlow`
 
-**LNDDO** — Fintech platform assessing SME creditworthiness from digital-footprint data to offer short-term business credit lines (UAE market). Architecture & framework design team.
+**LNDDO** — Judged whether small businesses were creditworthy from their online activity, so they could be offered short-term credit. Built for the UAE market. I was on the team that designed how it all fitted together.
 `Node.js` `React` `MongoDB` `Azure` `Redis`
 
-**CardsPe (Zupcash)** — Offline-to-online commerce: merchants launch online stores shareable through chat apps. Built from scratch — APIs, auth/storage microservices, orchestration middleware, data modelling.
+**CardsPe (Zupcash)** — Got shop owners selling online, with stores they could share through chat apps. Built from nothing: the interfaces other systems talk to, the sign-in and file storage, the part that coordinates everything, and the way the data was organised.
 `Node.js` `Next.js` `MongoDB` `AWS` `Redis` `Elasticsearch`
 
-**VISSION** — Web-scraping platform: message queues between microservices, LDAP sign-in module, Express API proxy.
+**VISSION** — Collected information from websites automatically. The parts passed messages to each other through queues, with company sign-in and a shared entry point for the interfaces.
 `Python` `Flask` `Scrapy` `Puppeteer` `AWS Lambda`
 
-**LS MQTT** — Publisher-subscriber messaging on HiveMQ MQTT with a dynamic channel-management UI and an embedded-microcontroller proof of concept.
+**LS MQTT** — Messaging where senders publish and interested parties subscribe, with a screen for managing channels on the fly and a working proof of concept on a small embedded chip.
 `Node.js` `Next.js` `MQTT` `HiveMQ` `IoT`
 
-**Power App** — Blockchain dashboard integrating Ethereum smart contracts via Web3: live transaction history, chain state, and exchange data feeds.
+**Power App** — A dashboard for blockchain activity, wired into Ethereum contracts: live transaction history, the state of the chain, and exchange price feeds.
 `Solidity` `Ethereum` `Web3` `NFT` `Truffle`
 
 </details>
@@ -158,19 +158,19 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>📚 Integra Software Services — Senior Programmer, Innovation & R&D · 2016 → 2019</b></summary>
 <br/>
 
-**iNLP** *(18-person team)* — NLP engine for publishing: cognitive rule engine, custom spaCy NER models, FastText language detection routing to Hugging Face neural machine translation, MinHash/LSH de-duplication at scale, LSTM/CNN deep learning, and transfer learning with BERT, GPT-2, and T5; Rasa-based chatbot.
+**iNLP** *(18-person team)* — A language-AI engine for publishing. It picked out names and terms from text, worked out which language something was in and sent it to be translated, and stripped out duplicates across huge volumes. Built on deep learning, and on adapting existing AI models to new tasks. Plus a chatbot.
 `Python` `spaCy` `NLTK` `TensorFlow` `Hugging Face` `Rasa`
 
-**iAuthor / iCorrectProof** — Online author-proofing editor for Adobe InDesign content, designed from scratch as Scrum Master/SPOC: real-time grammar checking over sockets, an Electron desktop app plus PWA, automated multi-format document delivery, and blockchain-based peer review with Stripe/PayPal.
+**iAuthor / iCorrectProof** — An online editor for authors checking their own proofs, designed from scratch while I also ran the team. It checked grammar as you typed. It came as both a desktop app and a web app. It produced finished documents in several formats on its own. And peer review was recorded on a blockchain, with card and PayPal payments.
 `React` `Redux` `Electron` `Express` `Azure` `WebSockets`
 
-**Project X (R&D)** — InDesign-replacement rendering engine: in-browser PDF-as-HTML rendering via HTML Canvas. The work led to a **patent application**.
+**Project X (R&D)** — A page-layout engine meant to replace InDesign, drawing PDF pages as web pages in the browser. The research led to a **patent application**.
 `Node.js` `Canvas` `PDF.js` `Font Rendering`
 
-**WK Digital Book Platform** — Digital book platform with in-browser PDF rendering, a cron-based file-import engine, and localisation.
+**WK Digital Book Platform** — A digital book platform that rendered PDFs in the browser, imported files on a schedule, and worked in more than one language.
 `ASP.NET Web API` `MS SQL` `Angular`
 
-**iRights & Pearson platforms** — iRights: rights/permissions management for photo research (budgets, licensing scope, legal risk). Pearson Image Atlas (WCAG 2.0 AA accessible) and Video Collection (MyLab SSO).
+**iRights & Pearson platforms** — iRights managed rights and permissions for photo research, covering budgets, what a licence allowed, and legal risk. Also the Pearson Image Atlas, built to meet accessibility standards, and their Video Collection with single sign-on.
 `.NET` `Angular` `Accessibility`
 
 </details>
@@ -179,7 +179,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 <summary><b>🌍 Open Source & Side Quests</b></summary>
 <br/>
 
-**COVID-19 Dashboards** — Built the Tamil Nadu COVID-19 dashboard and a real-time SAARC impact visualisation; contributed district-level GeoJSON to the Covid India project.
+**COVID-19 Dashboards** — Built the Tamil Nadu COVID-19 dashboard and a live view of the impact across South Asia. Also contributed district-level map data to the Covid India project.
 `React` `D3` `GeoJSON`
 
 **npm Packages** — 13 published open-source packages on [npm](https://www.npmjs.com/~prasannabrabourame).
@@ -335,8 +335,8 @@ timeline
 
 ## 🎖️ Certification & Continuous Learning
 
-> The tools change every quarter. Staying fluent is part of the job — none of it
-> substitutes for having shipped something.
+> The tools change every few months, so keeping up is part of the job. None of it
+> replaces having actually delivered something.
 
 <table>
   <tr>
@@ -408,7 +408,7 @@ timeline
 
 ## ✍️ Latest Field Notes
 
-📝 I write about AI engineering, Docker, and production war stories on [Medium](https://medium.com/@prasannabrabourame) · 🏅 Verified badges on [Credly](https://www.credly.com/users/prasanna-brabourame)
+📝 I write about building AI, Docker, and what goes wrong in real systems on [Medium](https://medium.com/@prasannabrabourame) · 🏅 Verified badges on [Credly](https://www.credly.com/users/prasanna-brabourame)
 
 <table>
   <tr>
