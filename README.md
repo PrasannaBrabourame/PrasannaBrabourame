@@ -342,10 +342,11 @@ timeline
   <tr>
     <td width="33%" valign="top">
       <b>☁️ Google Cloud</b><br/>
-      <img src="https://img.shields.io/badge/Diamond_League-13,895_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
-      <b>38 skill badges in 2026</b> — Vertex AI Search &amp; data stores, Gemini Enterprise,
-      the Agent Development Kit, agent memory, tools &amp; guardrails, MLOps for
-      generative AI, cloud foundations.<br/><br/>
+      <img src="https://img.shields.io/badge/Diamond_League-21,179_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
+      <b>18 Google Cloud badges in 2026</b>, the latest on 29 Aug. Gemini Enterprise end
+      to end — first app, adding agents, multi-agent workflows, governing what agents can
+      reach. Plus the Agent Development Kit, Vertex AI Search &amp; data stores, Bigtable,
+      and the cloud foundations track.<br/><br/>
       <a href="https://www.skills.google/public_profiles/b37f16ea-e52a-411c-a350-d7e9fb01360e">Public profile →</a>
     </td>
     <td width="33%" valign="top">
@@ -358,8 +359,8 @@ timeline
     </td>
     <td width="33%" valign="top">
       <b>🏅 Verified badges</b><br/>
-      <img src="https://img.shields.io/badge/Credly-15_badges_since_2019-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
-      Google Cloud, AWS and IBM. Elsewhere: Microsoft Applied Skills for AI
+      <img src="https://img.shields.io/badge/Credly-29_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      18 Google Cloud, 9 IBM, 2 AWS. Elsewhere: Microsoft Applied Skills for AI
       research agents, NUS-ISS ICT Assessment for Software Developer, AWS Cloud
       Practitioner Essentials, Machine Learning (Stanford), IBM Certified Data
       Architect – Big Data.<br/><br/>
