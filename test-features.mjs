@@ -441,7 +441,24 @@ async function tally({ reply, reduced = false }) {
     `readability: a ${longest.split(" ").length}-word sentence — "${longest.slice(0, 90)}…"`);
 }
 
+/* ─────────── the open learning resource ─────────── */
+{
+  const { d } = boot();
+  const box = d.querySelector(".resource");
+  check(box, "resource: no learning-resource block");
+  check(box && box.closest("#learning"),
+    "resource: block is outside the learning section, where it belongs");
+  const cta = box && box.querySelector("a.resource-cta");
+  check(cta, "resource: no call to action link");
+  check(cta && cta.getAttribute("href") === "https://prasannabrabourame.github.io/learning-guide/",
+    `resource: wrong link — got "${cta && cta.getAttribute("href")}"`);
+  check(cta && cta.textContent.trim().length > 8, "resource: link has no readable text");
+  check(box && box.querySelector("h3"), "resource: no heading");
+  // the count is a claim; keep it where a person will notice it needs updating
+  check(box && /267/.test(box.textContent), "resource: topic count missing");
+}
+
 console.log(fail.length
   ? "FAIL\n - " + fail.join("\n - ")
-  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability clean (${checks} checks)`);
+  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability / resource clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);
