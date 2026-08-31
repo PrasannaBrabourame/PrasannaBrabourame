@@ -373,6 +373,24 @@ timeline
 
 <br/>
 
+## 📚 Open Learning Resource
+
+<p>
+  <a href="https://prasannabrabourame.github.io/learning-guide/"><img src="https://img.shields.io/badge/TL_LEARNING_OS-267_TOPICS-E8A33D?style=for-the-badge&labelColor=16324F"/></a>
+  <a href="https://prasannabrabourame.github.io/learning-guide/cloud.html"><img src="https://img.shields.io/badge/CLOUD_LAB-AWS_·_GCP_·_AZURE-2AA5A0?style=for-the-badge&labelColor=16324F"/></a>
+  <a href="https://github.com/PrasannaBrabourame/learning-guide"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+</p>
+
+> Everything I revise from, in one place, free for anyone.
+
+**[Complete Technical Lead &amp; AI Engineer Learning Guide](https://prasannabrabourame.github.io/learning-guide/)** — **267 production-grade topics** across Kubernetes, Google Cloud, large language models, retrieval, agents, multi-tenancy, architecture and leadership. Every topic is a card you can drill, sorted by difficulty and by subject, with progress, streaks and starring built in.
+
+**[Cloud lab](https://prasannabrabourame.github.io/learning-guide/cloud.html)** — follows one request from a phone all the way to the answer and back, across AWS, GCP and Azure. Walks the seven network layers, lets you break each one to see what stops working, and includes a CIDR calculator and a plain explanation of what NGINX actually does.
+
+Built for my own preparation, kept public because the notes are more useful to other people than they are sitting on my laptop.
+
+<br/>
+
 ## 📊 Telemetry
 
 <p>
