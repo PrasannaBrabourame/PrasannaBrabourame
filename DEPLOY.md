@@ -124,8 +124,8 @@ Older projects that are already public on your LinkedIn (FWMOMCare, Exit Pass, t
 iNLP, LNDDO, CardsPe, NUS IASS) are still named — they are not confidential. Move them behind
 the same wall if you'd rather.
 
-`test-confidentiality.mjs` enforces this: it fails the build if any of `[withheld]`, `[withheld]`, `[withheld]`,
-`[withheld]`, `[withheld]`, `[withheld]`, `[withheld]` or `regulated firm` reappears in the page or
+`test-confidentiality.mjs` enforces this: it fails the build if any withheld client name,
+regulator or product codename reappears in the page, the README, this file, or
 in any accessible label. **Run it before you publish, and after any edit to the case notes.**
 
 ## The hero illustration
