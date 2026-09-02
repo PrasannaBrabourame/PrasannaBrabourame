@@ -27,17 +27,45 @@ function boot({ reduced = false } = {}) {
       try{t.cb();}catch(e){} }); } };
   return { window, d: window.document, ios, pump };
 }
-const fail=[]; const ok=(c,m)=>{ if(!c) fail.push(m); };
+const fail=[]; let checks=0;
+const ok=(c,m)=>{ checks++; if(!c) fail.push(m); };
 
 // ─────────── confidentiality: nothing identifying may survive ───────────
+//
+// The withheld terms are stored base64-encoded rather than in plain text. This
+// repository is public, so a tidy list of client names sitting in the very file
+// that exists to suppress them was the leak itself — GitHub code search would
+// return this file for a search on any client's name.
+//
+// This is obfuscation, not security. Anyone reading the file can decode it in a
+// second. It only stops the repository surfacing in a plain-text search for a
+// client, which was the actual exposure.
 {
-  const banned = ["MUIS","ACRA","halal","Halal","HIVA","ComplAI","SecWiz","LighTool",
-                  "Corporate Service Provider"];
-  banned.forEach(w => ok(!html.includes(w), `confidentiality: "${w}" still in the page`));
+  const banned = [
+    "TVVJUw==", "QUNSQQ==", "aGFsYWw=", "SGFsYWw=", "SElWQQ==",
+    "Q29tcGxBSQ==", "U2VjV2l6", "TGlnaFRvb2w=", "Q29ycG9yYXRlIFNlcnZpY2UgUHJvdmlkZXI="
+  ].map(b => Buffer.from(b, "base64").toString("utf8"));
+  const mask = w => w.slice(0, 2) + "…";      // never echo a full name into CI output
+
+  banned.forEach(w => ok(!html.includes(w),
+    `confidentiality: a withheld name ("${mask(w)}") is in the page`));
+
   // and no product name should reach a screen reader through an aria-label either
   const { d } = boot();
   const labels = [...d.querySelectorAll("[aria-label]")].map(e => e.getAttribute("aria-label")).join(" ");
-  banned.forEach(w => ok(!labels.includes(w), `confidentiality: "${w}" in an aria-label`));
+  banned.forEach(w => ok(!labels.includes(w),
+    `confidentiality: a withheld name ("${mask(w)}") is in an aria-label`));
+
+  // The page was never the only public surface. README.md is the profile landing
+  // page and is read far more often; DEPLOY.md and PUBLISH.md ship in the same
+  // public repository. All of them are held to the same standard.
+  for (const f of ["README.md", "DEPLOY.md", "PUBLISH.md", "CODEME.md"]) {
+    let text;
+    try { text = fs.readFileSync(new URL("./" + f, import.meta.url), "utf8"); }
+    catch { continue; }                        // absent is fine; present and dirty is not
+    banned.forEach(w => ok(!text.includes(w),
+      `confidentiality: a withheld name ("${mask(w)}") is in ${f}`));
+  }
 }
 
 // ─────────── hero illustration ───────────
@@ -277,5 +305,5 @@ const fail=[]; const ok=(c,m)=>{ if(!c) fail.push(m); };
 }
 
 console.log(fail.length ? "FAIL\n - " + fail.join("\n - ")
-                        : "confidentiality / nav / email / learning / stack / actors clean (" + (9+9+11+20+13+4+13+37+62) + " checks)");
+                        : `confidentiality / nav / email / learning / stack / actors clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);

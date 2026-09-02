@@ -46,12 +46,12 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
 
 ## 🛰️ Flagship AI Deployments
 
-> Real systems doing real work, in jobs where a wrong answer costs money. The code belongs to the clients and stays private, so I can talk about how it was built but not show it. Happy to tell the stories over ☕.
+> Real systems doing real work, in jobs where a wrong answer costs money. Client names, product names and figures are withheld — what follows is the shape of each problem and how it was solved. The code belongs to the clients and stays private, so I can talk about how it was built but not show it. Happy to tell the stories over ☕.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🕌 MUIS HIVA</h3>
+      <h3>📋 Certification Document Review</h3>
       <p>
         <img src="https://img.shields.io/badge/GOVTECH_·_CERTIFICATION-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DEPLOYED-2AA5A0?style=flat-square"/>
@@ -60,7 +60,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
       <p><code>React</code> <code>Firebase</code> <code>AISay</code> <code>Gemini</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🏛️ CSP ComplAI</h3>
+      <h3>🏛️ Regulatory Compliance Review</h3>
       <p>
         <img src="https://img.shields.io/badge/REGTECH_·_AML%2FCFT-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
@@ -71,7 +71,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🛡️ SecWiz</h3>
+      <h3>🛡️ Vulnerability Remediation Pipeline</h3>
       <p>
         <img src="https://img.shields.io/badge/DEVSECOPS-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
@@ -80,7 +80,7 @@ fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw
       <p><code>Node.js</code> <code>PostgreSQL</code> <code>Claude</code> <code>GPT</code> <code>Gemini</code> <code>Ollama</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🎓 NCS LighTool</h3>
+      <h3>🎓 Early-Years Learning Insight</h3>
       <p>
         <img src="https://img.shields.io/badge/EDTECH-16324F?style=flat-square"/>
         <img src="https://img.shields.io/badge/●_DELIVERED-2AA5A0?style=flat-square"/>
