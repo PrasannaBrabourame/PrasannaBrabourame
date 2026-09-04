@@ -139,8 +139,8 @@ const ok=(c,m)=>{ checks++; if(!c) fail.push(m); };
   const txt = sec.textContent.replace(/\s+/g, " ");
   ok(/22,167 points/.test(txt), "learning: points figure wrong or missing");
   ok(/Diamond League/.test(txt), "learning: league missing");
-  ok(/22 Google Cloud badges in 2026/.test(txt), "learning: badge count wrong or missing");
-  ok(/33 on Credly/.test(txt), "learning: Credly count wrong or missing");
+  ok(/24 Google Cloud badges in 2026/.test(txt), "learning: badge count wrong or missing");
+  ok(/35 on Credly/.test(txt), "learning: Credly count wrong or missing");
   // and must NOT claim certifications that are only 'recommended next' on Credly
   ["Professional Cloud Architect", "Associate Cloud Engineer", "Cloud Digital Leader",
    "Professional Cloud Developer", "Professional Cloud DevOps"].forEach(c =>

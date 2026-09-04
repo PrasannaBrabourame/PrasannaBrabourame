@@ -37,7 +37,7 @@ how_i_work:
   build: "the whole system myself — front end, AI pipeline, security, infra"
   harden: "for the day after go-live — retries, watchdogs, audits, backstops"
 education: B.Tech Electronics & Communications — Pondicherry University (2012-16)
-credentials: 45 certificates · 1 patent application · 33 verified Credly badges
+credentials: 45 certificates · 1 patent application · 35 verified Credly badges
 speaks: [English, Tamil, TypeScript, Python, Go]
 fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw it"
 ```
@@ -343,7 +343,7 @@ timeline
     <td width="33%" valign="top">
       <b>☁️ Google Cloud</b><br/>
       <img src="https://img.shields.io/badge/Diamond_League-22,167_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
-      <b>22 Google Cloud badges in 2026</b>, the latest on 31 Aug. The Agent Development
+      <b>24 Google Cloud badges in 2026</b>, the latest on 3 Sep. The Agent Development
       Kit end to end — engineer, deploy, then evaluate and improve — plus multi-agent
       architectures. Gemini Enterprise from first app to governing agent access. Vertex AI
       Search &amp; data stores, Bigtable, and the cloud foundations track.<br/><br/>
@@ -359,8 +359,8 @@ timeline
     </td>
     <td width="33%" valign="top">
       <b>🏅 Verified badges</b><br/>
-      <img src="https://img.shields.io/badge/Credly-33_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
-      22 Google Cloud, 9 IBM, 2 AWS. Elsewhere: Microsoft Applied Skills for AI
+      <img src="https://img.shields.io/badge/Credly-35_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      24 Google Cloud, 9 IBM, 2 AWS. Elsewhere: Microsoft Applied Skills for AI
       research agents, NUS-ISS ICT Assessment for Software Developer, AWS Cloud
       Practitioner Essentials, Machine Learning (Stanford), IBM Certified Data
       Architect – Big Data.<br/><br/>
