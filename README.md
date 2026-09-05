@@ -222,7 +222,12 @@ timeline
 
 **🕸️ Agent frameworks & orchestration**
 
+> One agent doing everything is last year's shape. Several narrow ones, with something watching them, is this year's.
+
 <p>
+  <img src="https://img.shields.io/badge/Multi--Agent_Orchestration-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Guardian_Agents-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agentic_Coding-2AA5A0?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/Google_ADK-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/Vertex_AI_Agent_Engine-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
@@ -254,11 +259,14 @@ timeline
   <img src="https://img.shields.io/badge/OpenTelemetry-E8A33D?style=for-the-badge&logo=opentelemetry&logoColor=16324F"/>
 </p>
 
-**⚡ Optimisation — cost, latency, context**
+**⚡ Context engineering — cost, latency, context**
 
-> The bill and the latency are design outputs, not accidents.
+> Most agent failures are not the model being stupid. They are the model being handed the wrong things — and it is the biggest lever on the bill.
 
 <p>
+  <img src="https://img.shields.io/badge/Context_Engineering-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Write_·_Select_·_Compress_·_Isolate-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prefix_Caching-16324F?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/Caveman_Prompting-16324F?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/Context_Headroom-16324F?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/LLM_Wiki-16324F?style=for-the-badge&logoColor=white"/>
