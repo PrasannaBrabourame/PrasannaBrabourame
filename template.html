@@ -454,6 +454,30 @@
   .cap p{font-size:14.5px;line-height:1.72;color:var(--body);max-width:44ch}
   .cap b{color:var(--ink);font-weight:600}
 
+  /* ---------- kv cache ---------- */
+  .kv{
+    margin:clamp(30px,4vw,46px) 0 clamp(24px,3vw,34px);
+    padding:clamp(20px,2.6vw,28px);
+    border:1px solid var(--rule);border-radius:12px;background:var(--surface);
+  }
+  .kv-lead{margin:0 0 16px;font-size:14px;color:var(--body)}
+  .kv-rows{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+  .kv-rows li{display:grid;grid-template-columns:15ch 1fr 17ch;gap:12px;align-items:center}
+  .kv-name{font-size:13px;color:var(--ink);font-weight:600}
+  .kv-track{background:var(--rule-soft);border-radius:3px;height:16px;overflow:hidden}
+  .kv-fill{display:block;height:100%;border-radius:3px}
+  .kv-fill.full{width:100%;background:var(--faint);opacity:.55}
+  /* 2,500 against 1,124,750 is 0.2% — too thin to see, so it is shown at a
+     readable floor and the real figures sit beside it. */
+  .kv-fill.thin{width:2.5%;background:var(--teal)}
+  .kv-val{font-family:var(--mono);font-size:12px;color:var(--faint);text-align:right}
+  .kv-note{margin:16px 0 0;font-size:13.5px;color:var(--body)}
+  .kv-note b{color:var(--ink);font-weight:600}
+  @media (max-width:560px){
+    .kv-rows li{grid-template-columns:1fr;gap:5px}
+    .kv-val{text-align:left}
+  }
+
   /* ---------- credentials strip ---------- */
   .creds{
     margin-top:clamp(40px,5vw,64px);padding-top:clamp(28px,3.5vw,40px);
@@ -1330,6 +1354,61 @@
         <p>Nothing is allowed unless it has been explicitly permitted. People see only what their role needs. Stored data is scrambled so it is useless if stolen. Every request has to prove who it is. Uploads are locked down and there are limits on how often anyone can call the system. Personal details are blacked out of the logs, and there is a full record of who did what. Plus the documents and training that let someone else take it over completely.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ KV CACHE ============ -->
+<section class="band" id="kvcache">
+  <div class="wrap">
+    <p class="eyebrow reveal">What a long conversation costs</p>
+    <h2 class="reveal">The model keeps notes on what it has already read.</h2>
+    <p class="lede reveal">A model writes one word at a time. This is the reason it can do
+    that quickly rather than taking a minute over a paragraph. It is also where most of the
+    cost of a long conversation quietly sits.</p>
+
+    <div class="kv reveal">
+      <p class="kv-lead">Writing a 500-word answer on top of a 2,000-word conversation:</p>
+      <ul class="kv-rows">
+        <li>
+          <span class="kv-name">Re-reading every time</span>
+          <span class="kv-track"><span class="kv-fill full"></span></span>
+          <span class="kv-val">1,124,750 words read</span>
+        </li>
+        <li>
+          <span class="kv-name">Keeping notes</span>
+          <span class="kv-track"><span class="kv-fill thin"></span></span>
+          <span class="kv-val">2,500 words read</span>
+        </li>
+      </ul>
+      <p class="kv-note">Same answer. Roughly <b>450 times</b> the work if nothing is kept
+      between words.</p>
+    </div>
+
+    <div class="grid2">
+      <article class="principle reveal">
+        <h3>Read once, then one word at a time</h3>
+        <p class="copy">Send a model 2,000 words and it reads all 2,000 before it says
+        anything. That first pass is why the opening word takes noticeably longer than the
+        rest of the sentence.</p>
+        <p class="copy">For the second word it would have to read 2,001. For the third,
+        2,002. A 500-word answer would mean reading the whole conversation 500 times over.
+        So it does not. It keeps notes on everything it has read so far, and each new word
+        only reads itself and consults the notes. Those notes are the <b>KV cache</b>.</p>
+      </article>
+      <article class="principle reveal">
+        <h3>The notes take room, and the room runs out</h3>
+        <p class="copy">The notes grow with the conversation. Every word adds more. On a
+        busy service it is usually the notes, not the model, that fill the machine first,
+        which makes them the thing deciding how many people you can serve at once.</p>
+        <p class="copy">There is a bargain in it, though. If two requests begin with exactly
+        the same text, the notes for that opening can be reused instead of rebuilt. That is
+        what providers sell as <b>prompt caching</b>, usually at a fraction of the normal
+        price.</p>
+      </article>
+    </div>
+
+    <p class="marg reveal">Put the parts that never change at the front. Reordering a prompt
+    can cut the bill without changing a single answer.</p>
   </div>
 </section>
 
