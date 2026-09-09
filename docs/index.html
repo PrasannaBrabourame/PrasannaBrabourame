@@ -1364,10 +1364,17 @@
     <div class="caps">
       <div class="cap reveal">
         <h3>AI systems</h3>
-        <p>Building AI that carries out multi-step jobs on its own, and doing it across more than one provider so you are not locked to any of them: <b>Claude</b>, <b>Gemini</b>, <b>OpenAI</b>, <b>Bedrock</b>, <b>Ollama</b>. Tools for that include <b>Vertex AI Agent Engine</b>, <b>Google ADK</b>, <b>Model Context Protocol</b>, LangChain and LangGraph, and CrewAI. Also letting AI answer from your own documents (known as RAG), sorting and reading uploaded files, and always keeping plain rules behind the AI to catch it. Earlier on: spaCy, Hugging Face, TensorFlow, Rasa.</p>
+        <p>Building AI that carries out multi-step jobs on its own, across more than one provider so you are not locked to any of them: <b>Claude</b>, <b>Gemini</b>, <b>OpenAI</b>, <b>Bedrock</b> and <b>Ollama</b>. Tools for that include <b>Vertex AI Agent Engine</b>, <b>Google ADK</b>, <b>Model Context Protocol</b>, LangChain and LangGraph, and CrewAI.</p>
+        <p>Most of that is now <b>multi-agent orchestration</b>: several narrow agents doing one job between them, rather than one agent trying to do everything. Above them sit <b>guardian agents</b>, whose only task is to check the others before a person sees the result. <b>Agentic coding</b> too, where the AI writes changes that reach a real codebase.</p>
+        <p>Also letting AI answer from your own documents, known as RAG, and sorting and reading uploaded files. There is always a plain rule behind the AI to catch it. Earlier on: spaCy, Hugging Face, TensorFlow, Rasa.</p>
       </div>
       <div class="cap reveal">
-        <h3>Making it cheaper and faster</h3>
+        <h3>Context engineering</h3>
+        <p>Deciding exactly what the AI sees on every call: the instructions, the documents
+        pulled in, the history kept, the tools offered. Most agent failures are not the model
+        being stupid. They are the model being handed the wrong things. It is the biggest
+        lever on the bill too, because an agent can send hundreds of thousands of words in
+        and get a paragraph back.</p>
         <p>What it costs and how fast it feels are things you design, not things that just happen. <b>Prompt caching</b>, so you do not pay twice for the same question. <b>Model routing</b>, so easy work never reaches an expensive AI. <b>Caveman prompting</b>, which means cutting instructions down to the few words that actually change the answer. Deliberate <b>context headroom</b>, leaving spare room so replies never get cut off at the edge. And an <b>LLM wiki</b>: a tidied-up summary of your knowledge that the AI reads, instead of wading through every original document. Plus putting the most useful information first, shortening what gets sent, summarising as you go, grouping requests together, asking for answers in a fixed format, and using a smaller, cheaper AI wherever it is honestly good enough.</p>
       </div>
       <div class="cap reveal">
@@ -1518,7 +1525,7 @@
         <a href="mailto:prasanna18101994@gmail.com">Email</a>
       </span>
     </div>
-    <p class="built">Last updated <time datetime="2026-09-09">9 Sep 2026</time>  &middot;  <a class="rev" href="https://github.com/PrasannaBrabourame/PrasannaBrabourame/commits/main" rel="noopener">4a9b293-dirty</a></p>
+    <p class="built">Last updated <time datetime="2026-09-09">9 Sep 2026</time>  &middot;  <a class="rev" href="https://github.com/PrasannaBrabourame/PrasannaBrabourame/commits/main" rel="noopener">1dc4d8a-dirty</a></p>
   </div>
 </footer>
 
