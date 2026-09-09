@@ -458,7 +458,104 @@ async function tally({ reply, reduced = false }) {
   check(box && /267/.test(box.textContent), "resource: topic count missing");
 }
 
+/* ─────────── Top K / Top P explorer ─────────── */
+function sampler() {
+  const { window, d } = boot();
+  const set = (el, v) => {
+    el.value = String(v);
+    el.dispatchEvent(new window.Event("input"));
+  };
+  const rows = () => [...d.querySelectorAll("#smBars li")];
+  const inWords = () => rows().filter(li => !li.classList.contains("out"))
+    .map(li => li.querySelector(".sm-word").textContent);
+  const tab = m => d.querySelector(`.sm-tab[data-mode="${m}"]`)
+    .dispatchEvent(new window.Event("click"));
+  return { window, d, set, rows, inWords, tab };
+}
+
+{
+  const { d, rows } = sampler();
+  check(d.getElementById("sampler"), "sampler: section missing");
+  check(rows().length === 12, `sampler: expected 12 candidate words, got ${rows().length}`);
+  check(d.querySelector("#sampler").closest("#sampling"), "sampler: not inside the sampling section");
+  check(d.getElementById("smGo"), "sampler: no draw button");
+  check(d.getElementById("smRead").getAttribute("role") === "status",
+    "sampler: readout is not announced to screen readers");
+
+  // the percentages shown must actually add up, or the explanation is a lie
+  const total = rows().reduce((a, li) =>
+    a + parseFloat(li.querySelector(".sm-pct").textContent), 0);
+  check(Math.abs(total - 100) <= 1, `sampler: probabilities sum to ${total}%, not 100%`);
+}
+{
+  // Top K keeps exactly K, no matter the shape of the distribution
+  const { d, set, inWords, rows } = sampler();
+  for (const k of [1, 3, 5, 12]) {
+    set(d.getElementById("dialK"), k);
+    check(inWords().length === k,
+      `sampler: K=${k} kept ${inWords().length} words, expected ${k}`);
+  }
+  set(d.getElementById("dialK"), 5);
+  check(rows()[4].classList.contains("edge"), "sampler: the cut-off word is not marked");
+  check(/top <b>5<\/b>/i.test(d.getElementById("smRead").innerHTML),
+    "sampler: readout does not state the count");
+}
+{
+  // Top P keeps a varying number — that difference is the entire teaching point
+  const { d, set, inWords, tab } = sampler();
+  tab("p");
+  check(d.querySelector('.sm-tab[data-mode="p"]').getAttribute("aria-pressed") === "true",
+    "sampler: Top P tab not marked pressed");
+  check(d.querySelector('.sm-dial[data-dial="k"]').hidden,
+    "sampler: the K dial is still showing in P mode");
+  check(!d.querySelector('.sm-dial[data-dial="p"]').hidden,
+    "sampler: the P dial did not appear");
+
+  set(d.getElementById("dialP"), 50);
+  const at50 = inWords().length;
+  set(d.getElementById("dialP"), 90);
+  const at90 = inWords().length;
+  set(d.getElementById("dialP"), 100);
+  const at100 = inWords().length;
+  check(at50 < at90 && at90 < at100,
+    `sampler: P should widen the set as it rises — got ${at50}, ${at90}, ${at100}`);
+  check(at50 === 2, `sampler: P=50% should keep 2 words on this distribution, got ${at50}`);
+  check(at90 === 8, `sampler: P=90% should keep 8 words on this distribution, got ${at90}`);
+  check(at90 !== 9, "sampler: P=90% must not just mirror the K dial");
+}
+{
+  // the one that matters: a discarded word must never come out
+  const { window, d, set, inWords } = sampler();
+  set(d.getElementById("dialK"), 3);
+  const allowed = new Set(inWords());
+  const go = d.getElementById("smGo");
+  const blank = d.querySelector(".sm-blank");
+  const drawn = new Set();
+  for (let i = 0; i < 400; i++) {
+    go.dispatchEvent(new window.Event("click"));
+    drawn.add(blank.textContent);
+  }
+  const leaked = [...drawn].filter(w => !allowed.has(w));
+  check(leaked.length === 0,
+    `sampler: drew words that were cut off — ${leaked.join(", ")}`);
+  check(drawn.size > 1, "sampler: 400 draws produced one word — is it sampling at all?");
+  check(/drew/.test(d.getElementById("smOut").textContent), "sampler: no draw feedback");
+}
+{
+  // K=1 is the degenerate case: it must be deterministic, not merely likely
+  const { window, d, set } = sampler();
+  set(d.getElementById("dialK"), 1);
+  const go = d.getElementById("smGo");
+  const blank = d.querySelector(".sm-blank");
+  const seen = new Set();
+  for (let i = 0; i < 60; i++) {
+    go.dispatchEvent(new window.Event("click"));
+    seen.add(blank.textContent);
+  }
+  check(seen.size === 1, `sampler: K=1 should always give the same word, got ${[...seen].join("/")}`);
+}
+
 console.log(fail.length
   ? "FAIL\n - " + fail.join("\n - ")
-  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability / resource clean (${checks} checks)`);
+  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability / resource / sampler clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);
