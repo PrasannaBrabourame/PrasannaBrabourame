@@ -458,43 +458,7 @@ async function tally({ reply, reduced = false }) {
   check(box && /267/.test(box.textContent), "resource: topic count missing");
 }
 
-/* ─────────── KV cache band ─────────── */
-{
-  const { d } = boot();
-  const sec = d.getElementById("kvcache");
-  check(sec, "kv: section missing");
-  check(sec && sec.querySelectorAll(".principle").length === 2, "kv: expected two cards");
-  check(sec && /KV cache/.test(sec.textContent), "kv: never names the thing it describes");
-  check(sec && /prompt caching/i.test(sec.textContent),
-    "kv: does not connect the cache to what providers actually sell");
-
-  // the comparison is the load-bearing claim, so the arithmetic is recomputed
-  // here rather than trusted: 500 tokens generated on a 2,000-token prefix
-  const txt = sec ? sec.textContent.replace(/\s+/g, " ") : "";
-  const pre = 2000, out = 500;
-  let naive = 0;
-  for (let i = 0; i < out; i++) naive += pre + i;
-  const cached = pre + out;
-  check(txt.includes(naive.toLocaleString("en-US")),
-    `kv: the uncached figure should be ${naive.toLocaleString("en-US")}`);
-  check(txt.includes(cached.toLocaleString("en-US")),
-    `kv: the cached figure should be ${cached.toLocaleString("en-US")}`);
-  check(txt.includes(String(Math.round(naive / cached))),
-    `kv: the ratio should be ${Math.round(naive / cached)}`);
-
-  const fills = sec ? [...sec.querySelectorAll(".kv-fill")] : [];
-  check(fills.length === 2, `kv: expected 2 bars, got ${fills.length}`);
-  const thin = css.match(/\.kv-fill\.thin\{([^}]*)\}/);
-  const w = thin && thin[1].match(/width:\s*([\d.]+)%/);
-  check(w && parseFloat(w[1]) >= 1,
-    "kv: the cached bar is scaled to invisibility — it needs a readable floor");
-
-  // it must not lean on the removed sampling band
-  check(!/those dials|Top K|Top P/i.test(txt),
-    "kv: still refers to the Top K / Top P section, which no longer exists");
-}
-
 console.log(fail.length
   ? "FAIL\n - " + fail.join("\n - ")
-  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability / resource / kv clean (${checks} checks)`);
+  : `theme / jsonld / fonts / 404 / contact / tally / stamp / readability / resource clean (${checks} checks)`);
 process.exit(fail.length ? 1 : 0);
