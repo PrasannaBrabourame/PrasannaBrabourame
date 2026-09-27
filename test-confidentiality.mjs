@@ -137,12 +137,17 @@ const ok=(c,m)=>{ checks++; if(!c) fail.push(m); };
   ok(links.some(h => h.includes("credly.com")), "learning: no Credly link");
   // the numbers must match what the profiles actually say
   const txt = sec.textContent.replace(/\s+/g, " ");
-  ok(/22,167 points/.test(txt), "learning: points figure wrong or missing");
+  ok(/27,897 points/.test(txt), "learning: points figure wrong or missing");
   ok(/Diamond League/.test(txt), "learning: league missing");
-  ok(/Generative AI Leader/.test(txt), "learning: badge count wrong or missing");
-  ok(/36 on Credly/.test(txt), "learning: Credly count wrong or missing");
-  // and must NOT claim certifications that are only 'recommended next' on Credly
-  ["Professional Cloud Architect", "Associate Cloud Engineer", "Cloud Digital Leader",
+  ok(/Professional Cloud Architect/.test(txt), "learning: flagship certification missing");
+  ok(/Generative AI Leader/.test(txt), "learning: GenAI Leader certification missing");
+  ok(/38 on Credly/.test(txt), "learning: Credly count wrong or missing");
+  // and must NOT claim certifications that are only 'recommended next' on Credly.
+  // Professional Cloud Architect left this list on 2026-09-26: it is now a real
+  // badge on the profile — state "accepted", issued by Google Cloud, public —
+  // rather than a suggestion attached to another badge. The rest are still only
+  // recommendations and must not appear on the page.
+  ["Associate Cloud Engineer", "Cloud Digital Leader",
    "Professional Cloud Developer", "Professional Cloud DevOps"].forEach(c =>
     ok(!txt.includes(c), `learning: claims "${c}", which is not actually held`));
 }
