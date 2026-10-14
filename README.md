@@ -37,7 +37,7 @@ how_i_work:
   build: "the whole system myself — front end, AI pipeline, security, infra"
   harden: "for the day after go-live — retries, watchdogs, audits, backstops"
 education: B.Tech Electronics & Communications — Pondicherry University (2012-16)
-credentials: 47 certificates · 1 patent application · 38 verified Credly badges
+credentials: 47 certificates · 1 patent application · 39 verified Credly badges
 speaks: [English, Tamil, TypeScript, Python, Go]
 fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw it"
 ```
@@ -206,6 +206,12 @@ timeline
 
 ## 🧰 Technical Arsenal
 
+> Three things redrew this map between 2024 and 2026: **MCP** standardised tool
+> connectivity, reasoning models changed what an agent can be trusted to do alone,
+> and **memory became an architectural primitive** rather than a vector database
+> with extra steps. The gap that still bites in production is evaluation — most
+> teams running agents have observability; far fewer have evals.
+
 **🧠 Models & LLM providers**
 
 <p>
@@ -229,6 +235,8 @@ timeline
   <img src="https://img.shields.io/badge/Guardian_Agents-2AA5A0?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/Agentic_Coding-2AA5A0?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/Google_ADK-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI_Agents_SDK-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pydantic_AI-2AA5A0?style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/Vertex_AI_Agent_Engine-2AA5A0?style=for-the-badge&logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/MCP-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
   <img src="https://img.shields.io/badge/LangChain-2AA5A0?style=for-the-badge&logo=langchain&logoColor=white"/>
@@ -240,6 +248,32 @@ timeline
   <img src="https://img.shields.io/badge/Claude_Code-2AA5A0?style=for-the-badge&logo=anthropic&logoColor=white"/>
 </p>
 
+**🧠 Agent memory**
+
+> Memory stopped being a vector database with extra steps.
+
+<p>
+  <img src="https://img.shields.io/badge/Mem0-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Letta-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Zep_·_Graphiti-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Temporal_Knowledge_Graphs-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Session_vs_Long--Term-2AA5A0?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TTL_&_Eviction-2AA5A0?style=for-the-badge&logoColor=white"/>
+</p>
+
+**🧰 Sandboxing & tool safety**
+
+> Authorise before the tool runs, not after the model speaks.
+
+<p>
+  <img src="https://img.shields.io/badge/E2B-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Anthropic_Sandbox-16324F?style=for-the-badge&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pre--Action_Authorization-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Capability_Scoping-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Network_Allow--lists-16324F?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Credential_Proxying-16324F?style=for-the-badge&logoColor=white"/>
+</p>
+
 **📈 Evaluation & observability**
 
 > An AI change you cannot measure is a rumour.
@@ -248,7 +282,9 @@ timeline
   <img src="https://img.shields.io/badge/DeepEval-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/Ragas-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/Promptfoo-E8A33D?style=for-the-badge&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Langfuse-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/LangSmith-E8A33D?style=for-the-badge&logo=langchain&logoColor=16324F"/>
+  <img src="https://img.shields.io/badge/Braintrust-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/TruLens-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/Arize_Phoenix-E8A33D?style=for-the-badge&logoColor=16324F"/>
   <img src="https://img.shields.io/badge/W&B_Weave-E8A33D?style=for-the-badge&logo=weightsandbiases&logoColor=16324F"/>
@@ -350,9 +386,10 @@ timeline
   <tr>
     <td width="33%" valign="top">
       <b>☁️ Google Cloud</b><br/>
-      <img src="https://img.shields.io/badge/Diamond_League-27,897_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
+      <img src="https://img.shields.io/badge/Diamond_League-28,077_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
       <b>Professional Cloud Architect</b> (26 Sep) and <b>Generative AI Leader</b> (9 Sep)
-      certifications, plus <b>25 skill badges</b> this year. The Agent Development
+      certifications, plus <b>26 skill badges</b> this year — latest the Gemini Enterprise
+      Forward Deployed Engineer bootcamp (8 Oct). The Agent Development
       Kit end to end — engineer, deploy, then evaluate and improve — plus multi-agent
       architectures. Gemini Enterprise from first app to governing agent access. Vertex AI
       Search &amp; data stores, Bigtable, and the cloud foundations track.<br/><br/>
@@ -368,8 +405,8 @@ timeline
     </td>
     <td width="33%" valign="top">
       <b>🏅 Verified badges</b><br/>
-      <img src="https://img.shields.io/badge/Credly-38_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
-      27 Google Cloud, 9 IBM, 2 AWS. Elsewhere: Microsoft Applied Skills for AI
+      <img src="https://img.shields.io/badge/Credly-39_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      28 Google Cloud, 9 IBM, 2 AWS. Elsewhere: Microsoft Applied Skills for AI
       research agents, NUS-ISS ICT Assessment for Software Developer, AWS Cloud
       Practitioner Essentials, Machine Learning (Stanford), IBM Certified Data
       Architect – Big Data.<br/><br/>
