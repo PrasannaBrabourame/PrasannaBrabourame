@@ -8,6 +8,17 @@ echo "── regenerating the drawings"
 ( cd diagrams && for g in reality cases exp learn glyphs; do python3 "$g.py" >/dev/null; done )
 echo "   ok"
 
+# A dirty stamp has shipped twice now: build.py runs before the sources are
+# committed, bakes "<sha>-dirty" into the footer, and that gets committed into
+# docs/ and deployed. Refuse to build rather than produce it again.
+if [ -n "$(git status --porcelain -- . ':(exclude)docs' 2>/dev/null)" ]; then
+  echo "✗ uncommitted source changes — the build stamp would read '-dirty'."
+  echo "  Commit sources first, then rebuild, then commit docs/:"
+  git status --porcelain -- . ':(exclude)docs' | sed 's/^/    /'
+  echo "  Override with:  ALLOW_DIRTY=1 ./publish.sh"
+  [ "${ALLOW_DIRTY:-}" = "1" ] || exit 1
+fi
+
 echo "── building docs/"
 if [ ! -f fonts.css ]; then
   echo "   vendoring the webfonts (once)"; python3 fonts.py
