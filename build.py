@@ -151,6 +151,17 @@ def main():
     html = html.replace("{{COUNTER_ENDPOINT}}", COUNTER_ENDPOINT)
 
     stamp = build_stamp()
+    # A dirty stamp has shipped three times now. The guard added to publish.sh
+    # did not stop the third, because build.py is usually run directly and
+    # never saw it. A control on a path nobody takes is not a control, so it
+    # lives here instead, where every route passes through.
+    if stamp["rev"].endswith("-dirty") and os.environ.get("ALLOW_DIRTY") != "1":
+        sys.exit(
+            "refusing to build: sources are uncommitted, so the footer would read\n"
+            "  %s\n"
+            "Commit sources first, then rebuild, then commit docs/.\n"
+            "Local preview only:  ALLOW_DIRTY=1 python3 build.py" % stamp["rev"])
+
     rev_html = ""
     if stamp["rev"]:
         rev_html = ('  &middot;  <a class="rev" href="%s" rel="noopener">%s</a>'
