@@ -16,6 +16,17 @@
   <a href="https://calendly.com/prasannabrabourame/15min"><img src="https://img.shields.io/badge/BOOK-15_MIN_CONSULT-2AA5A0?style=for-the-badge&labelColor=16324F"/></a>
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/img/illusion-dark.svg">
+    <img src="docs/img/illusion-light.svg" width="440"
+         alt="A Kanizsa triangle: three discs, each with a wedge removed, arranged so a triangle appears between them although none is drawn.">
+  </picture>
+</p>
+
+<p align="center"><i>You can see the triangle. Nothing drew it.<br/>
+That is also what a convincing demo is.</i></p>
+
 <br/>
 
 ## `$ whoami`
