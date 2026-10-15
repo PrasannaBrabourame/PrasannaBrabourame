@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" role="img" aria-label="A Kanizsa triangle: three discs each with a wedge removed, arranged so that a bright triangle appears between them even though no triangle is drawn.">
+  <rect width="520" height="300" fill="none"/>
+  <path d="M 260.00 56.00 L 283.00 95.84 A 46 46 0 1 0 237.00 95.84 Z" fill="#16324F"/>
+  <path d="M 332.75 182.00 L 286.75 182.00 A 46 46 0 1 0 309.75 142.16 Z" fill="#16324F"/>
+  <path d="M 187.25 182.00 L 210.25 142.16 A 46 46 0 1 0 233.25 182.00 Z" fill="#2AA5A0"/>
+  <circle cx="260.00" cy="140.00" r="3.4" fill="#C9862F"/>
+  <text x="260" y="284" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="0.04em" fill="#8b9198">There is no triangle in this image.</text>
+</svg>
