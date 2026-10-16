@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" role="img" aria-label="A Kanizsa triangle: three discs each with a wedge removed, arranged so that a bright triangle appears between them even though no triangle is drawn.">
-  <rect width="520" height="300" fill="none"/>
-  <path d="M 260.00 56.00 L 283.00 95.84 A 46 46 0 1 0 237.00 95.84 Z" fill="#e8e4dc"/>
-  <path d="M 332.75 182.00 L 286.75 182.00 A 46 46 0 1 0 309.75 142.16 Z" fill="#e8e4dc"/>
-  <path d="M 187.25 182.00 L 210.25 142.16 A 46 46 0 1 0 233.25 182.00 Z" fill="#4bb3ac"/>
-  <circle cx="260.00" cy="140.00" r="3.4" fill="#dda053"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" role="img" aria-label="Three discs, each with a wedge cut out. When the gaps line up a triangle appears between them, although no triangle is drawn. The discs turn slowly and the triangle dissolves.">
+  <style>.p{animation:swing 7.5s ease-in-out infinite}.p0{transform-origin:260.00px 56.00px;animation-delay:0.00s}.p1{transform-origin:332.75px 182.00px;animation-delay:0.14s}.p2{transform-origin:187.25px 182.00px;animation-delay:0.28s}@keyframes swing{0%,38%{transform:rotate(0deg)}56%,70%{transform:rotate(52deg)}88%,100%{transform:rotate(0deg)}}.dot{animation:fade 7.5s ease-in-out infinite}@keyframes fade{0%,38%{opacity:1}56%,70%{opacity:.12}88%,100%{opacity:1}}@media(prefers-reduced-motion:reduce){.p,.dot{animation:none}}</style>
+  <path class="p p0" d="M 260.00 56.00 L 283.00 95.84 A 46 46 0 1 0 237.00 95.84 Z" fill="#e8e4dc"/>
+  <path class="p p1" d="M 332.75 182.00 L 286.75 182.00 A 46 46 0 1 0 309.75 142.16 Z" fill="#e8e4dc"/>
+  <path class="p p2" d="M 187.25 182.00 L 210.25 142.16 A 46 46 0 1 0 233.25 182.00 Z" fill="#4bb3ac"/>
+  <circle class="dot" cx="260.00" cy="140.00" r="3.4" fill="#dda053"/>
   <text x="260" y="284" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="0.04em" fill="#767c84">There is no triangle in this image.</text>
 </svg>
