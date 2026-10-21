@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img" aria-label="Two horizontal lines of exactly equal length. The arrowheads make one look longer than the other.">
+  <line x1="70" y1="60" x2="230" y2="60" stroke="var(--ink)" stroke-width="1.9" stroke-linecap="round"/>
+  <line x1="70" y1="60" x2="85" y2="45" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="70" y1="60" x2="85" y2="75" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="230" y1="60" x2="215" y2="45" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="230" y1="60" x2="215" y2="75" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="70" y1="112" x2="230" y2="112" stroke="var(--ink)" stroke-width="1.9" stroke-linecap="round"/>
+  <line x1="70" y1="112" x2="55" y2="97" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="70" y1="112" x2="55" y2="127" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="230" y1="112" x2="245" y2="97" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="230" y1="112" x2="245" y2="127" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="150.0" cy="86" r="2.6" fill="var(--amber)"/>
+</svg>
