@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img" aria-label="Two identical teal circles. The one ringed by large circles looks smaller than the one ringed by small circles.">
+  <circle cx="88.0" cy="44.0" r="17" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="122.6" cy="64.0" r="17" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="122.6" cy="104.0" r="17" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="88.0" cy="124.0" r="17" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="53.4" cy="104.0" r="17" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="53.4" cy="64.0" r="17" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="88" cy="84.0" r="15" fill="var(--teal)"/>
+  <circle cx="212.0" cy="58.0" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="232.3" cy="67.8" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="237.3" cy="89.8" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="223.3" cy="107.4" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="200.7" cy="107.4" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="186.7" cy="89.8" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="191.7" cy="67.8" r="7" fill="none" stroke="var(--rule)" stroke-width="1.6"/>
+  <circle cx="212" cy="84.0" r="15" fill="var(--teal)"/>
+</svg>

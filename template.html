@@ -454,6 +454,20 @@
   .cap p{font-size:14.5px;line-height:1.72;color:var(--body);max-width:44ch}
   .cap b{color:var(--ink);font-weight:600}
 
+  /* ---------- section illusions ---------- */
+  /* Small and off to one side: they are an aside to the argument, not the
+     argument. Each one is the section's claim restated as something the
+     reader's own eyes get wrong. */
+  .illu{
+    margin:clamp(16px,2vw,24px) 0 0;max-width:300px;
+  }
+  .illu svg{width:100%;height:auto;display:block}
+  .illu figcaption{
+    margin-top:9px;font-size:11.5px;line-height:1.55;color:var(--faint);
+    max-width:40ch;
+  }
+  @media (max-width:820px){ .illu{margin-left:auto;margin-right:auto} }
+
   /* ---------- credentials strip ---------- */
   .creds{
     margin-top:clamp(40px,5vw,64px);padding-top:clamp(28px,3.5vw,40px);
@@ -978,6 +992,7 @@
 <section class="band" id="gap">
   <div class="wrap">
     <h2 class="reveal">Most AI projects don't fail at the model.</h2>
+    <figure class="illu reveal">{{SVG:g-illu-gap}}<figcaption>No triangle is drawn here. You can see one anyway. So can a steering committee.</figcaption></figure>
     <p class="lede reveal">They fail in the gap between something that looked good in a meeting and something a staff member can stand behind when an inspector asks. That gap is where I work.</p>
 
     <p class="gap-claim reveal">A demo is judged on its best answer. A real system is judged on <mark>its worst one</mark>. The broken reply at three in the morning that nobody saw. The service refusing to respond in the middle of an inspection. The answer that sounded certain and was <mark class="t">quietly wrong</mark>. I build everything assuming that day is already in the diary.</p>
@@ -1035,6 +1050,7 @@
 <section class="band" id="work">
   <div class="wrap">
     <p class="eyebrow reveal">Selected work</p>
+    <figure class="illu reveal">{{SVG:g-illu-work}}<figcaption>Both teal circles are the same size. Severity comes from the rule book, not the company it keeps.</figcaption></figure>
     <h2 class="reveal">Four AI systems, in jobs where a wrong answer costs real money.</h2>
     <p class="lede reveal">First idea to finished system in each case. The problems came from the people who do the work every day. The design, the building and the safety side were mine.</p>
     <p class="lede reveal" style="margin-top:14px">I have left out client names, product names and numbers. What follows is the shape of each problem and how it got solved, which is the useful part anyway.</p>
@@ -1177,6 +1193,7 @@
 <section class="band" id="how">
   <div class="wrap">
     <p class="eyebrow reveal">How I work</p>
+    <figure class="illu reveal">{{SVG:g-illu-how}}<figcaption>One architecture. Two readings, and no way to hold both at once.</figcaption></figure>
     <h2 class="reveal">Embedded with the team that owns the problem.</h2>
     <p class="lede reveal">Forward deployed means what it sounds like. I work inside your limits, your rules about data and your idea of what finished looks like — rather than from a contract someone wrote before anybody had seen the actual problem.</p>
       <figure class="sketch reveal stack-fig">
@@ -1213,6 +1230,7 @@
 <section class="band" id="track">
   <div class="wrap">
     <p class="eyebrow reveal">Track record</p>
+    <figure class="illu reveal">{{SVG:g-illu-track}}<figcaption>Both lines are exactly the same length. Ten years looks different depending which end you measure from.</figcaption></figure>
     <h2 class="reveal">Ten years of shipping, in three phases.</h2>
     <p class="lede reveal">Research and language AI before it was fashionable, then building platforms and products, then back to AI — this time with real consequences attached.</p>
       <figure class="sketch reveal track-stage" aria-hidden="false"><div class="sk-scroll">{{SVG:career}}</div><figcaption>Ten years, three phases, two countries, and the thread running through them.</figcaption></figure>
@@ -1293,6 +1311,7 @@
 <section class="band" id="capabilities">
   <div class="wrap">
     <p class="eyebrow reveal">Capabilities</p>
+    <figure class="illu reveal">{{SVG:g-illu-caps}}<figcaption>Both bars are the same colour. This is why quality gets measured instead of judged.</figcaption></figure>
     <h2 class="reveal">What I bring to the first week.</h2>
       <figure class="sketch reveal"><div class="sk-scroll">{{SVG:skills}}</div></figure>
 
@@ -1337,6 +1356,7 @@
 <section class="band" id="learning">
   <div class="wrap">
     <p class="eyebrow reveal">Certification &amp; continuous learning</p>
+    <figure class="illu reveal">{{SVG:g-illu-learning}}<figcaption>The grey smudges at the crossings are not in the picture.</figcaption></figure>
     <h2 class="reveal">The tools change every quarter. Staying fluent is part of the job.</h2>
     <p class="lede reveal">None of this replaces having actually delivered something. It is how I keep up with tools that did not exist a year and a half ago. It also happens to leave a record of what I was learning, and when.</p>
 
@@ -1395,6 +1415,7 @@
 <section class="band" id="ready">
   <div class="wrap">
     <p class="eyebrow reveal">A short self-check</p>
+    <figure class="illu reveal">{{SVG:g-illu-ready}}<figcaption>Every line here is parallel. Five questions, for the same reason.</figcaption></figure>
     <h2 class="reveal">Is your AI ready to be depended on?</h2>
     <p class="lede reveal">Five questions — the same ones I would ask in the first fifteen minutes of a call. There is no score at the end, just an honest look at where you stand.</p>
     <div class="convo" id="convo" aria-live="polite"></div>

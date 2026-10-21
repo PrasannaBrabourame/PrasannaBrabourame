@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img" aria-label="Two identical teal bars. On the darker ground one looks lighter than the other.">
+  <rect x="26" y="40" width="112" height="88" fill="var(--ink)" opacity="0.14"/>
+  <rect x="162" y="40" width="112" height="88" fill="var(--ink)" opacity="0.62"/>
+  <rect x="58" y="70" width="48" height="28" fill="var(--teal)"/>
+  <rect x="194" y="70" width="48" height="28" fill="var(--teal)"/>
+  <circle cx="150.0" cy="84" r="2.6" fill="var(--amber)"/>
+</svg>

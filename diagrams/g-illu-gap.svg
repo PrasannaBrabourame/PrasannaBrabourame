@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img" aria-label="Three discs with a wedge cut from each. A bright triangle appears between them although no triangle is drawn.">
+  <path d="M 150.0 30.0 L 164.5 55.1 A 29 29 0 1 0 135.5 55.1 Z" fill="var(--ink)"/>
+  <path d="M 196.8 111.0 L 167.8 111.0 A 29 29 0 1 0 182.3 85.9 Z" fill="var(--ink)"/>
+  <path d="M 103.2 111.0 L 117.7 85.9 A 29 29 0 1 0 132.2 111.0 Z" fill="var(--ink)"/>
+  <circle cx="150.0" cy="84.0" r="2.6" fill="var(--amber)"/>
+</svg>
