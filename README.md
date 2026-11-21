@@ -397,7 +397,7 @@ timeline
   <tr>
     <td width="33%" valign="top">
       <b>☁️ Google Cloud</b><br/>
-      <img src="https://img.shields.io/badge/Gold_League-30,131_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
+      <img src="https://img.shields.io/badge/Google_Skills-30,131_pts-E8A33D?style=flat-square&labelColor=16324F"/><br/><br/>
       <b>Professional Cloud Architect</b> (26 Sep) and <b>Generative AI Leader</b> (9 Sep)
       <b>Professional Agentic Architect</b> (21 Nov) joins them, plus <b>27 skill badges</b>
       this year. The Agent Development

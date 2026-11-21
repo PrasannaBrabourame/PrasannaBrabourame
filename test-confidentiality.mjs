@@ -138,7 +138,7 @@ const ok=(c,m)=>{ checks++; if(!c) fail.push(m); };
   // the numbers must match what the profiles actually say
   const txt = sec.textContent.replace(/\s+/g, " ");
   ok(/30,131 points/.test(txt), "learning: points figure wrong or missing");
-  ok(/Gold League/.test(txt), "learning: league missing");
+  ok(/points on Google Skills/.test(txt), "learning: Google Skills line missing");
   ok(/Professional Agentic Architect/.test(txt), "learning: newest certification missing");
   ok(/Professional Cloud Architect/.test(txt), "learning: flagship certification missing");
   ok(/Generative AI Leader/.test(txt), "learning: GenAI Leader certification missing");
