@@ -1,51 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img" aria-label="A grid of squares. Grey smudges appear at the crossings between them, where nothing is drawn.">
-  <rect x="78.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="14.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="78.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="35.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="78.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="56.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="78.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="77.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="78.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="98.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="78.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="119.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="78.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="99.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="120.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="141.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="162.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="183.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
-  <rect x="204.5" y="140.5" width="17" height="17" fill="var(--ink)" opacity="0.82"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 168" role="img" aria-label="Four quarters side by side, each with a stack of four tools. More of each stack is amber, meaning new that quarter, and more dashed outlines of dropped tools float above it as the year goes on.">
+  <line x1="22" y1="127" x2="278" y2="127" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/>
+  <rect x="32.0" y="113" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="32.0" y="96" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="32.0" y="79" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="32.0" y="62" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <text x="52" y="146" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="var(--ink)" opacity="0.7">Q1</text>
+  <rect x="97.0" y="113" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="97.0" y="96" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="97.0" y="79" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="97.0" y="62" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="103.0" y="47" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="103.0" y="30" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <text x="117" y="146" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="var(--ink)" opacity="0.7">Q2</text>
+  <rect x="162.0" y="113" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="162.0" y="96" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="162.0" y="79" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="162.0" y="62" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="168.0" y="47" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="168.0" y="30" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="168.0" y="13" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <text x="182" y="146" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="var(--ink)" opacity="0.7">Q3</text>
+  <rect x="227.0" y="113" width="40" height="13" rx="2" fill="none" stroke="var(--teal)" stroke-width="1.7"/>
+  <rect x="227.0" y="96" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="227.0" y="79" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="227.0" y="62" width="40" height="13" rx="2" fill="var(--amber)"/>
+  <rect x="233.0" y="47" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="233.0" y="30" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <rect x="233.0" y="13" width="28" height="9" rx="2" fill="none" stroke="var(--rule)" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <text x="247" y="146" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="var(--ink)" opacity="0.7">Q4</text>
+  <line x1="26" y1="158" x2="270" y2="158" stroke="var(--rule)" stroke-width="1.2"/>
+  <path d="M 266 154 L 274 158 L 266 162" fill="none" stroke="var(--rule)" stroke-width="1.2" stroke-linejoin="round"/>
 </svg>

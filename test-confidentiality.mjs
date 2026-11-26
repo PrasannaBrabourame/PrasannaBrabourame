@@ -142,7 +142,8 @@ const ok=(c,m)=>{ checks++; if(!c) fail.push(m); };
   ok(/Professional Agentic Architect/.test(txt), "learning: newest certification missing");
   ok(/Professional Cloud Architect/.test(txt), "learning: flagship certification missing");
   ok(/Generative AI Leader/.test(txt), "learning: GenAI Leader certification missing");
-  ok(/42 on Credly/.test(txt), "learning: Credly count wrong or missing");
+  ok(/Claude Certified Architect/.test(txt), "learning: Anthropic certification missing");
+  ok(/43 on Credly/.test(txt), "learning: Credly count wrong or missing");
   // and must NOT claim certifications that are only 'recommended next' on Credly.
   // Professional Cloud Architect left this list on 2026-09-26: it is now a real
   // badge on the profile — state "accepted", issued by Google Cloud, public —

@@ -1,19 +1,24 @@
 <!-- ============ HEADER ============ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16324F,55:2AA5A0,100:E8A33D&height=210&section=header&text=Prasanna%20Brabourame&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Forward%20Deployed%20AI%20Specialist%20%C2%B7%20Tech%20Lead%20%E2%80%94%20AI%20Solutions&descAlignY=57&descSize=20"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16324F,55:2AA5A0,100:E8A33D&height=210&section=header&text=Prasanna%20Brabourame&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Forward%20Deployed%20AI%20Specialist%20%C2%B7%20Tech%20Lead%20%E2%80%94%20AI%20Solutions&descAlignY=57&descSize=20" alt="Prasanna Brabourame — Forward Deployed AI Specialist"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&center=true&vCenter=true&width=750&height=60&color=2AA5A0&lines=I+ship+AI+from+demo+to+production.;Forward+Deployed+%40+NCS+AI+Central;GovTech+%C2%B7+RegTech+%C2%B7+Agentic+AI;4+AI+platforms+live+in+regulated+domains;10%2B+years+%E2%80%94+architect%2C+build%2C+harden%2C+hand+over"/>
+  <b>Prasanna Brabourame</b> — forward deployed AI specialist and tech lead in Singapore.
+  I build AI systems for government and regulated teams and keep them working after go-live.<br/>
+  Google Cloud Professional Agentic Architect, Professional Cloud Architect and Generative AI Leader · Anthropic Claude Certified Architect.<br/>
+  Portfolio: <a href="https://prasannabrabourame.github.io/PrasannaBrabourame/">prasannabrabourame.github.io/PrasannaBrabourame</a>
+  · Learning guide: <a href="https://prasannabrabourame.github.io/learning-guide/">prasannabrabourame.github.io/learning-guide</a>
+</p>
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-CURRENTLY_DEPLOYED-E8A33D?style=for-the-badge&labelColor=16324F" alt=""/>
+  <img src="https://img.shields.io/badge/BASE-SINGAPORE_🇸🇬-2AA5A0?style=for-the-badge&labelColor=16324F" alt=""/>
+  <img src="https://komarev.com/ghpvc/?username=PrasannaBrabourame&style=for-the-badge&color=2AA5A0&label=VISITORS" alt="profile visitors"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-CURRENTLY_DEPLOYED-E8A33D?style=for-the-badge&labelColor=16324F"/>
-  <img src="https://img.shields.io/badge/BASE-SINGAPORE_🇸🇬-2AA5A0?style=for-the-badge&labelColor=16324F"/>
-  <img src="https://komarev.com/ghpvc/?username=PrasannaBrabourame&style=for-the-badge&color=2AA5A0&label=VISITORS"/>
-</p>
-
-<p align="center">
-  <a href="https://prasannabrabourame.github.io/PrasannaBrabourame/"><img src="https://img.shields.io/badge/PORTFOLIO-prasannabrabourame.github.io-E8A33D?style=for-the-badge&labelColor=16324F"/></a>
-  <a href="https://calendly.com/prasannabrabourame/15min"><img src="https://img.shields.io/badge/BOOK-15_MIN_CONSULT-2AA5A0?style=for-the-badge&labelColor=16324F"/></a>
+  <a href="https://prasannabrabourame.github.io/PrasannaBrabourame/"><img src="https://img.shields.io/badge/PORTFOLIO-prasannabrabourame.github.io-E8A33D?style=for-the-badge&labelColor=16324F" alt=""/></a>
+  <a href="https://calendly.com/prasannabrabourame/15min"><img src="https://img.shields.io/badge/BOOK-15_MIN_CONSULT-2AA5A0?style=for-the-badge&labelColor=16324F" alt=""/></a>
 </p>
 
 <p align="center">
@@ -48,7 +53,7 @@ how_i_work:
   build: "the whole system myself — front end, AI pipeline, security, infra"
   harden: "for the day after go-live — retries, watchdogs, audits, backstops"
 education: B.Tech Electronics & Communications — Pondicherry University (2012-16)
-credentials: 48 certificates · 1 patent application · 42 verified Credly badges
+credentials: 49 certificates · 1 patent application · 43 verified Credly badges
 speaks: [English, Tamil, TypeScript, Python, Go]
 fun_fact: "I trust an LLM exactly as far as its deterministic backstop can throw it"
 ```
@@ -408,16 +413,18 @@ timeline
     </td>
     <td width="33%" valign="top">
       <b>🤖 Anthropic</b><br/>
-      <img src="https://img.shields.io/badge/Earned-Mar_–_Jun_2026-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
-      Claude Platform 101 · Claude Code 101 and Claude Code in Action ·
+      <img src="https://img.shields.io/badge/Claude_Certified_Architect-Professional-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      <b>Claude Certified Architect – Professional</b> (26 Nov): designing Claude systems
+      for an enterprise — context engineering, evaluation, integration, governance.
+      Course badges (Mar – Jun): Claude Platform 101 · Claude Code 101 and Claude Code in Action ·
       Building with the Claude API · Model Context Protocol, including
       Advanced Topics · Agent Skills · AI Fluency · Claude with Vertex AI ·
       Claude Cowork.
     </td>
     <td width="33%" valign="top">
       <b>🏅 Verified badges</b><br/>
-      <img src="https://img.shields.io/badge/Credly-42_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
-      30 Google Cloud, 9 IBM, 2 AWS, 1 Anthropic. Elsewhere: Microsoft Applied Skills for AI
+      <img src="https://img.shields.io/badge/Credly-43_badges_since_2018-2AA5A0?style=flat-square&labelColor=16324F"/><br/><br/>
+      30 Google Cloud, 9 IBM, 2 AWS, 2 Anthropic. Elsewhere: Microsoft Applied Skills for AI
       research agents, NUS-ISS ICT Assessment for Software Developer, AWS Cloud
       Practitioner Essentials, Machine Learning (Stanford), IBM Certified Data
       Architect – Big Data.<br/><br/>
@@ -456,20 +463,6 @@ Built for my own preparation, kept public because the notes are more useful to o
   <img src="https://img.shields.io/github/last-commit/PrasannaBrabourame/PrasannaBrabourame?style=for-the-badge&logo=git&labelColor=16324F&color=E8A33D"/>
 </p>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prasannabrabourame&theme=github_dark" alt="Profile summary — contributions, repos and activity"/>
-
-<table>
-  <tr>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=prasannabrabourame&theme=github_dark" alt="Commits, PRs, issues and stars"/></td>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=prasannabrabourame&theme=github_dark" alt="Top languages by repository"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=prasannabrabourame&theme=github_dark" alt="Top languages by commit"/></td>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=prasannabrabourame&theme=github_dark&utcOffset=8" alt="Productive time, UTC+8"/></td>
-  </tr>
-</table>
-
-<img src="https://streak-stats.demolab.com/?user=prasannabrabourame&hide_border=true&theme=dark&background=0D1117&ring=2AA5A0&fire=E8A33D&currStreakLabel=2AA5A0" alt="Contribution streak"/>
 
 <!-- Every image above was checked 3x for a 200 before being used.
      Retired, and why — do not re-add without re-testing:
@@ -519,15 +512,5 @@ Built for my own preparation, kept public because the notes are more useful to o
   <a href="mailto:prasanna18101994@gmail.com"><img src="https://img.shields.io/badge/📫_prasanna18101994@gmail.com-16324F?style=for-the-badge"/></a>
 </p>
 
-## ☕ Fuel the Mission
-
-<p>
-  <a href="https://www.buymeacoffee.com/prasana"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45" alt="Buy Me A Coffee"/></a>
-  <a href="https://ko-fi.com/prasannabrabourame"><img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="45" alt="Ko-fi"/></a>
-</p>
-
-<!-- Optional: contribution snake — enable the Platane/snk GitHub Action in this repo, then uncomment:
-<img src="https://raw.githubusercontent.com/PrasannaBrabourame/PrasannaBrabourame/output/github-contribution-grid-snake-dark.svg" alt="snake"/>
--->
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:16324F,55:2AA5A0,100:E8A33D&height=120&section=footer&text=Thanks%20for%20visiting%20%E2%9D%A4&fontSize=22&fontColor=ffffff&fontAlignY=75"/>

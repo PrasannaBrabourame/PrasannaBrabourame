@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 echo "── regenerating the drawings"
-( cd diagrams && for g in reality cases exp learn glyphs; do python3 "$g.py" >/dev/null; done )
+( cd diagrams && for g in reality cases exp learn glyphs illusions; do python3 "$g.py" >/dev/null; done )
 echo "   ok"
 
 # A dirty stamp has shipped twice now: build.py runs before the sources are
